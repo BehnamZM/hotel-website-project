@@ -1,0 +1,69 @@
+@import '../../../Styles/variables';
+@import '../../../Styles/mixin';
+
+.slideinfo {
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  background-color: transparent;
+  width: 60%;
+  height: 80%;
+  @include flexstyle(flex,center,center,column,1rem);
+  gap: 1rem;
+  color: #fff;
+  bottom: 10%;
+  text-align: center;
+
+  .iconbox{
+    background-color: transparent;
+    display: flex;
+    opacity: 0;
+    animation-delay: 0.5s;
+    margin-bottom: 2rem;
+
+    .staricon{
+      color:  $primary;
+      background-color: transparent;
+      font-size: 20px;
+    }
+  }
+
+  h5{
+    background-color: transparent;
+    font-size: 30px;
+    font-weight: 200;
+    opacity: 0;
+    animation-delay: 0.8s;
+    margin: 0;
+  }
+  h3{
+    background-color: transparent;
+    opacity: 0;
+    animation-delay: 1.2s;
+    font-size: 40px;
+    font-weight: bold;
+  }
+}
+
+.swiper-slide-active .iconbox{
+  animation: captionanimate 1s .5s ease forwards;
+}
+
+.swiper-slide-active .slideinfo h5{
+  animation: captionanimate 1s .5s ease forwards;
+}
+
+.swiper-slide-active .slideinfo h3{
+  animation: captionanimate 1s .5s ease forwards;
+}
+
+@keyframes captionanimate {
+  0%{
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

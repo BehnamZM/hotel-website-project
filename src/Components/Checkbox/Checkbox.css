@@ -1,0 +1,53 @@
+.checkroom {
+  position: absolute;
+  -webkit-transform: translateX(-5%);
+          transform: translateX(-5%);
+  bottom: 10%;
+  height: 30px;
+  z-index: 1;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  background-color: #aa8453;
+  width: 90%;
+  text-align: center;
+}
+
+.checkroom button {
+  background-color: #aa8453;
+  color: #fff;
+  padding: 1rem;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.checkroom button:hover {
+  background-color: #3c3737;
+  color: #fff;
+}
+
+.formcontrol {
+  width: 100%;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  font-family: vazir;
+}
+
+.calendar {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=Checkbox.css.map */

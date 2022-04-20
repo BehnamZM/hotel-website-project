@@ -1,0 +1,65 @@
+nav {
+  width: 100%;
+  position: absolute;
+  z-index: 1000;
+  height: 90px;
+  top: 0;
+  right: 0;
+}
+
+nav .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 90%;
+  margin: 0 auto;
+}
+
+nav .logo {
+  width: 20%;
+}
+
+nav .logo img {
+  width: 100%;
+}
+
+nav .links {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+nav .links .link {
+  color: #fff;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.7rem;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+nav .links .link .arrowicon {
+  font-size: 13px;
+}
+
+nav .links .link:hover {
+  color: #aa8453;
+}
+/*# sourceMappingURL=Nav.css.map */
