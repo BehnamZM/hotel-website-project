@@ -1,0 +1,76 @@
+@import '../../../Styles/variables';
+@import '../../../Styles/mixin';
+
+
+*{
+  margin: 0;
+}
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  align-items: center;
+  height: 100vh;
+
+  .about-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+
+    .about-icon-box{
+      color: $primary;
+    }
+
+    h6{
+      font-size: 20px;
+      font-weight: 200;
+    }
+
+    h3{
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    p{
+      width: 80%;
+      text-align: justify;
+    }
+
+    .about-reservation{
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 2rem;
+
+      .about-phoneicon{
+        color: $primary;
+        font-size: 40px;
+      }
+
+      .about-phonenumber{
+        h4{
+          color: $primary;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  .about-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+
+    img {
+      width: 100%;
+      height: 40vh;
+      object-fit: cover;
+    }
+  }
+}
+
+
+.img-two {
+  margin-top: 5rem;
+}

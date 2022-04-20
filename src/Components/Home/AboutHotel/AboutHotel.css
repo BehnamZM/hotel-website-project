@@ -1,1 +1,89 @@
-/* No CSS *//*# sourceMappingURL=AboutHotel.css.map */
+* {
+  margin: 0;
+}
+
+.about-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.about-container .about-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 1rem;
+}
+
+.about-container .about-us .about-icon-box {
+  color: #aa8453;
+}
+
+.about-container .about-us h6 {
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.about-container .about-us h3 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.about-container .about-us p {
+  width: 80%;
+  text-align: justify;
+}
+
+.about-container .about-us .about-reservation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.about-container .about-us .about-reservation .about-phoneicon {
+  color: #aa8453;
+  font-size: 40px;
+}
+
+.about-container .about-us .about-reservation .about-phonenumber h4 {
+  color: #aa8453;
+  font-size: 20px;
+}
+
+.about-container .about-img {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.about-container .about-img img {
+  width: 100%;
+  height: 40vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.img-two {
+  margin-top: 5rem;
+}
+/*# sourceMappingURL=AboutHotel.css.map */

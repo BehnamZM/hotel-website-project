@@ -16,6 +16,8 @@ export default function App() {
     { title: 'کافیست به ما اعتماد کنید', roomInfo: 'در بهترین مجموعه اقامتی این شهر منتظرتان هستیم ', src: './src/assets/hotel8.jpg' },
   ])
 
+  const [phoneNumber, setPhoneNumber] = useState("0216600000")
+
   return (
     <>
       <Swiper
@@ -37,7 +39,7 @@ export default function App() {
         <div className="reservation">
           <div className="phonenumber">
             <p>رزرو اتاق</p>
-            <h4>021354878</h4>
+            <h4>{phoneNumber}</h4>
           </div>
           <FiPhoneCall className="phoneicon" />
         </div>
