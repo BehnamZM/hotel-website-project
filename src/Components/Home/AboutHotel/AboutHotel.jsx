@@ -1,30 +1,18 @@
 import React from 'react'
 import './AboutHotel.css'
-import { AiFillStar } from 'react-icons/ai'
-import { FiPhoneCall } from 'react-icons/fi'
+import StarBox from '../../StarBox/StarBox';
+import ReservePhone from '../../ReservePhone/ReservePhone'
 
 function AboutHotel() {
   return (
     <>
       <div className="container about-container">
         <div className="about-us">
-          <div className="about-icon-box">
-            <AiFillStar />
-            <AiFillStar />
-            <AiFillStar />
-            <AiFillStar />
-            <AiFillStar />
-          </div>
+          <StarBox />
           <h6>هتل بینظیر و پنج ستاره کاپا</h6>
           <h3>از یک تجربه فوق العاده لذت ببر</h3>
           <p>به هتل لاکچری کاپا خوش آمدید ما سعی داریم تا به همراه کادری مجرب و کاردرست تجربه جذابی را برای شما عزیزان به وجود بیاوریم امیدواریم که اقامتگاه ما را برای گذراندن اوقاتی خوش انتخاب کنید.</p>
-          <div className="about-reservation">
-            <FiPhoneCall className="about-phoneicon" />
-            <div className="about-phonenumber">
-              <p>رزرو اتاق</p>
-              <h4>0216600000</h4>
-            </div>
-          </div>
+          <ReservePhone />
         </div>
         <div className="about-img">
           <div className='img-one'>

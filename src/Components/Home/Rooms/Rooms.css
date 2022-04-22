@@ -1,0 +1,76 @@
+.rooms-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 0.5rem;
+  min-height: 100vh;
+}
+
+.rooms-container .rooms-title {
+  border-left: 3px solid #aa8453;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.rooms-container .rooms-title h5 {
+  font-size: 17px;
+  font-weight: 200;
+  margin-bottom: 0.5rem;
+}
+
+.rooms-container .rooms-title h3 {
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.rooms-container .rooms-cards {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .rooms-container {
+    margin-top: 2rem;
+  }
+  .rooms-container .rooms-title h6 {
+    font-size: 23px;
+  }
+  .rooms-container .rooms-title h3 {
+    font-size: 25px;
+  }
+  .rooms-container .rooms-cards {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .rooms-container {
+    margin-top: 2rem;
+  }
+  .rooms-container .rooms-title h6 {
+    font-size: 23px;
+  }
+  .rooms-container .rooms-title h3 {
+    font-size: 25px;
+  }
+  .rooms-container .rooms-cards {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+/*# sourceMappingURL=Rooms.css.map */

@@ -1,0 +1,165 @@
+@import '../../../Styles/variables';
+
+
+.services-part {
+  background-color: $success;
+  height: 100vh;
+  margin-top: 6rem;
+
+  .services-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+    align-items: center;
+    height: 100%;
+
+    .services-explain {
+      color: #fff;
+
+      h6 {
+        font-size: 15px;
+        font-weight: 200;
+      }
+
+      h3 {
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: 2rem;
+      }
+
+      p {
+        text-align: justify;
+      }
+
+      .services-ask {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-top: 2rem;
+
+        .services-phoneicon {
+          color: $primary;
+          font-size: 40px;
+        }
+
+        .services-phonenumber {
+          h4 {
+            color: $primary;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .services-slider {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 3rem;
+    justify-content: center;
+
+  }
+}
+
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  left: 52%;
+  top: 10%;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+
+@media screen and (max-width: 768px) {
+  .services-part {
+    .services-container {
+      grid-template-columns: 1fr;
+
+      .services-explain {
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+
+        h6 {
+          font-size: 15px;
+          font-weight: 200;
+        }
+
+        h3 {
+          font-size: 25px;
+          font-weight: bold;
+          margin-bottom: 2rem;
+        }
+
+      }
+
+      .services-slider {
+        height: 50vh;
+      }
+    }
+  }
+
+  .swiper-horizontal>.swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    left: 10%;
+    top: 70%;
+  }
+
+}
+
+@media screen and (min-width: 768px) and(max-width: 992px) {
+  .services-part {
+    height: 50vh;
+
+    .services-container {
+      grid-template-columns: 1fr 2fr;
+
+      .services-explain {
+        text-align: center;
+
+        h6 {
+          font-size: 15px;
+          font-weight: 200;
+        }
+
+        h3 {
+          font-size: 25px;
+          font-weight: bold;
+          margin-bottom: 2rem;
+        }
+
+
+        .services-ask {
+          width: 100%;
+          justify-content: center;
+        }
+      }
+
+      .services-slider {
+        height: 50vh;
+      }
+    }
+  }
+
+  .swiper-horizontal>.swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    left: 5%;
+    top: 70%;
+  }
+  .swiper {
+    width: 90%;
+    height: 80%;
+  }
+
+}

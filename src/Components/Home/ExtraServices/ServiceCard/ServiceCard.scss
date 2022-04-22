@@ -1,0 +1,57 @@
+@import '../../../../Styles/variables';
+
+.servicecard{
+  background-color: $secondary;
+  height: 100%;
+  img{
+    width: 100%;
+    height: 40%;
+  }
+
+  .servicebody{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    .servicetitle{
+      font-size: 25px;
+      font-weight: 900;
+    }
+
+    .serviceprice{
+      display: flex;
+      align-items: center;
+      gap: 0.2rem;
+
+      .price{
+        color: $primary;
+        font-size: 30px;
+      }
+
+      .service-time{
+        font-size: 10px;
+      }
+    }
+    .servicelist{
+      .service-list-item{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-bottom: 0.5rem;
+
+        .service-list-item-icon{
+          color: $primary;
+          font-size: 20px;
+        }
+        li{
+          font-weight: 300;
+          font-size: 13px;
+          text-align: justify;
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+  }
+}

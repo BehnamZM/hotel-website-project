@@ -1,0 +1,158 @@
+.services-part {
+  background-color: #222;
+  height: 100vh;
+  margin-top: 6rem;
+}
+
+.services-part .services-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.services-part .services-container .services-explain {
+  color: #fff;
+}
+
+.services-part .services-container .services-explain h6 {
+  font-size: 15px;
+  font-weight: 200;
+}
+
+.services-part .services-container .services-explain h3 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.services-part .services-container .services-explain p {
+  text-align: justify;
+}
+
+.services-part .services-container .services-explain .services-ask {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.services-part .services-container .services-explain .services-ask .services-phoneicon {
+  color: #aa8453;
+  font-size: 40px;
+}
+
+.services-part .services-container .services-explain .services-ask .services-phonenumber h4 {
+  color: #aa8453;
+  font-size: 20px;
+}
+
+.services-part .services-slider {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  left: 52%;
+  top: 10%;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .services-part .services-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .services-part .services-container .services-explain {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .services-part .services-container .services-explain h6 {
+    font-size: 15px;
+    font-weight: 200;
+  }
+  .services-part .services-container .services-explain h3 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  .services-part .services-container .services-slider {
+    height: 50vh;
+  }
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    left: 10%;
+    top: 70%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .services-part {
+    height: 50vh;
+  }
+  .services-part .services-container {
+    -ms-grid-columns: 1fr 2fr;
+        grid-template-columns: 1fr 2fr;
+  }
+  .services-part .services-container .services-explain {
+    text-align: center;
+  }
+  .services-part .services-container .services-explain h6 {
+    font-size: 15px;
+    font-weight: 200;
+  }
+  .services-part .services-container .services-explain h3 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  .services-part .services-container .services-explain .services-ask {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .services-part .services-container .services-slider {
+    height: 50vh;
+  }
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    left: 5%;
+    top: 70%;
+  }
+  .swiper {
+    width: 90%;
+    height: 80%;
+  }
+}
+/*# sourceMappingURL=ExtraServices.css.map */
