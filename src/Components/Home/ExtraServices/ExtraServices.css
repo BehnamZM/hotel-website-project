@@ -20,13 +20,13 @@
   color: #fff;
 }
 
-.services-part .services-container .services-explain h6 {
-  font-size: 15px;
+.services-part .services-container .services-explain h5 {
+  font-size: 22px;
   font-weight: 200;
 }
 
 .services-part .services-container .services-explain h3 {
-  font-size: 25px;
+  font-size: 30px;
   font-weight: bold;
   margin-bottom: 2rem;
 }
@@ -70,20 +70,28 @@
           justify-content: center;
 }
 
-.swiper-horizontal > .swiper-pagination-bullets,
-.swiper-pagination-bullets.swiper-pagination-horizontal,
-.swiper-pagination-custom,
-.swiper-pagination-fraction {
-  left: 52%;
-  top: 10%;
+.services-part .services-slider .swiper-horizontal > .swiper-pagination-bullets,
+.services-part .services-slider .swiper-pagination-bullets.swiper-pagination-horizontal,
+.services-part .services-slider .swiper-pagination-custom,
+.services-part .services-slider .swiper-pagination-fraction {
+  left: 0;
+  bottom: -5%;
+  width: 100%;
+  z-index: 10;
+  position: relative;
+  margin-bottom: 1rem;
 }
 
-.swiper {
+.services-part .services-slider .swiper {
   width: 100%;
   height: 100%;
 }
 
-@media screen and (max-width: 768px) {
+.services-part .services-slider .swiper-pagination-bullet {
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
   .services-part .services-container {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -114,7 +122,7 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 992px) {
   .services-part {
     height: 50vh;
   }

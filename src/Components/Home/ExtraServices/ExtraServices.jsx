@@ -23,7 +23,7 @@ function ExtraServices() {
     <div className='services-part'>
       <div className="container services-container">
         <div className="services-explain">
-          <h6>بهترین قیمت ها</h6>
+          <h5>بهترین قیمت ها</h5>
           <h3>سرویسهای بیشتر</h3>
           <p>در هتل کاپا میتوانید با کمترین هزینه بهترین سرویسها را تجربه کنید که استخر و سالن ماساژ و صندوق امانات و نظافت اتاق با مجرب ترین افراد تنها گوشه ای از این سرویسها هستند.</p>
           <ReservePhone />

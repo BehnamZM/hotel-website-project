@@ -23,14 +23,14 @@
 }
 
 .rooms-container .rooms-title h5 {
-  font-size: 17px;
+  font-size: 22px;
   font-weight: 200;
   margin-bottom: 0.5rem;
 }
 
 .rooms-container .rooms-title h3 {
-  font-size: 32px;
-  font-weight: 900;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .rooms-container .rooms-cards {
@@ -42,7 +42,7 @@
   gap: 2rem;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .rooms-container {
     margin-top: 2rem;
   }
@@ -58,7 +58,7 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 992px) {
   .rooms-container {
     margin-top: 2rem;
   }

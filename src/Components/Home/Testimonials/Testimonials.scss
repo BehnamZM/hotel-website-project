@@ -1,0 +1,67 @@
+@import '../../../Styles/variables';
+@import '../../../Styles/mixin';
+
+.testimonials-part {
+  height: 100vh;
+  background-image: url('./src/assets/hotel5.jpg');
+  position: relative;
+  background-attachment: fixed;
+  background-size: cover;
+  @include flexstyle(flex, center, center, row, 0);
+
+  .testimonials-overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .testimonials-body {
+    z-index: 1;
+    width: 50%;
+    height: 100%;
+    color: $secondary;
+    @include flexstyle(flex, start, center, column, 0.5rem);
+
+    h5 {
+      @include h5Style;
+    }
+
+    h3 {
+      @include h3Style;
+      margin-bottom: 1rem;
+    }
+
+
+    .swiper {
+      background-color: transparent;
+      height: 40%;
+      width: 100%;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+      width: 100%;
+      bottom: 0;
+      left: 0;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+    .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+      margin: 0.2rem;
+      display: inline-block;
+    }
+  }
+}
+
+
+
+
+
+@include media(M) {}
+
+@include media(L) {}

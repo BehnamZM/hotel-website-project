@@ -1,0 +1,45 @@
+
+
+.testimonial-slide{
+  .testimonial-body{
+    p{
+      text-align: justify;
+    }
+    .client-profile{
+      margin-top: 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      img{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      .client-profile-details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.3rem;
+        .iconbox{
+          opacity: 1;
+          margin-bottom: 0;
+          
+
+          .staricon{
+            font-size: 13px;
+          }
+        }
+        .client-name{
+          font-size: 15px;
+          font-weight: 200;
+          
+        }
+        p{
+          font-size: 9px;
+        }
+      }
+    }
+  }
+}

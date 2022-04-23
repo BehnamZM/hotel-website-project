@@ -1,0 +1,106 @@
+.promotional-part {
+  height: 70vh;
+  position: relative;
+  background-image: url("./src/assets/hotel7.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.promotional-part .promotional-overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.promotional-part .promotional-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+.promotional-part .promotional-body .iconbox {
+  opacity: 1;
+  margin-bottom: 0.5rem;
+}
+
+.promotional-part .promotional-body h5 {
+  font-size: 22px;
+  font-weight: 200;
+}
+
+.promotional-part .promotional-body h3 {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.promotional-part .promotional-body .playicon-box {
+  position: relative;
+  padding: 1rem;
+  border-radius: 50%;
+  border: 2px solid #aa8453;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 0;
+  font-size: 70px;
+  margin-top: 1rem;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+}
+
+.promotional-part .promotional-body .playicon-box .playicon-overlay {
+  position: absolute;
+  background-color: #fff;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-radius: 50%;
+  margin: 0.1rem;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.promotional-part .promotional-body .playicon-box .playicon {
+  color: #aa8453;
+  z-index: 1;
+}
+
+.promotional-part .promotional-body .playicon-box:hover .playicon-overlay {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.promotional-part .promotional-body .playicon-box:hover .playicon {
+  color: #fff;
+}
+/*# sourceMappingURL=Promotional.css.map */

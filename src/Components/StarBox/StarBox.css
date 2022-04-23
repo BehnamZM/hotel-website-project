@@ -1,0 +1,17 @@
+.iconbox {
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  margin-bottom: 2rem;
+}
+
+.iconbox .staricon {
+  color: #aa8453;
+  background-color: transparent;
+  font-size: 20px;
+}
+/*# sourceMappingURL=StarBox.css.map */

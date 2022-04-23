@@ -1,0 +1,20 @@
+@import '../../../../Styles/variables';
+
+.facility-card{
+  .facility-card-body{
+    .facility-icon{
+      font-size: 50px;
+      color: $primary;
+    }
+    h6{
+      font-size: 18px;
+      margin: 1rem 0;
+
+    }
+    p{
+      font-size: 15px;
+      font-weight: 200;
+      width: 70%;
+    }
+  }
+}

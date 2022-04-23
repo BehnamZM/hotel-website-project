@@ -1,0 +1,28 @@
+@import '../../../Styles/variables';
+@import '../../../Styles/mixin';
+
+.facilities-part {
+  min-height: 100vh;
+  margin-top: 3rem;
+
+  .facilities-header {
+    width: fit-content;
+    padding: 0.5rem;
+    border-left: 3px solid $primary;
+
+    h5 {
+      @include h5Style;
+    }
+    
+    h3 {
+      @include h3Style;
+    }
+  }
+
+  .facilities-cards {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}

@@ -16,6 +16,11 @@ nav {
     height: 100%;
     width: 90%;
     margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  .menuicon {
+    display: none;
   }
 
   .logo {
@@ -49,4 +54,26 @@ nav {
     }
 
   }
+}
+
+@include media(M){
+  nav{
+
+    .logo{
+      width: 40%;
+    }
+    .links{
+      display: none;
+    }
+
+    .menuicon{
+      display: block;
+      color: $primary;
+      font-size: 20px;
+    }
+  }
+}
+
+@include media(L){
+  
 }

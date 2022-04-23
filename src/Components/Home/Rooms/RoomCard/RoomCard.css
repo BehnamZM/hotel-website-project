@@ -107,13 +107,13 @@
   width: 90%;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .card {
     height: 30vh;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 992px) {
   .card {
     height: 40vh;
   }

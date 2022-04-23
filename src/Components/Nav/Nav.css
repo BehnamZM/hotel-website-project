@@ -18,6 +18,13 @@ nav .nav {
   height: 100%;
   width: 90%;
   margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .menuicon {
+  display: none;
 }
 
 nav .logo {
@@ -61,5 +68,19 @@ nav .links .link .arrowicon {
 
 nav .links .link:hover {
   color: #aa8453;
+}
+
+@media (max-width: 768px) {
+  nav .logo {
+    width: 40%;
+  }
+  nav .links {
+    display: none;
+  }
+  nav .menuicon {
+    display: block;
+    color: #aa8453;
+    font-size: 20px;
+  }
 }
 /*# sourceMappingURL=Nav.css.map */

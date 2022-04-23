@@ -1,3 +1,6 @@
+@import '../../Styles/variables';
+@import '../../Styles/mixin';
+
 .checkroom {
   position: absolute;
   transform: translateX(-5%);
@@ -6,7 +9,6 @@
   z-index: 1;
   display: grid;
   grid-template-columns: repeat(5,1fr);
-  background-color: #aa8453;
   width: 90%;
   text-align: center;
 
@@ -40,4 +42,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+
+@include media(M){
+  .checkroom{
+    position: relative;
+    grid-template-columns: 1fr;
+    height: 40vh;
+    gap: 0.5rem;
+    margin-top: 2rem;
+
+    button{
+      height: 50px;
+    }
+  }
 }

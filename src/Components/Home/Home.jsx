@@ -4,7 +4,9 @@ import "./Home.css"
 import AboutHotel from './AboutHotel/AboutHotel'
 import Rooms from './Rooms/Rooms'
 import ExtraServices from './ExtraServices/ExtraServices'
-
+import Promotional from './Promotional/Promotional'
+import Facilities from './Facilities/Facilities'
+import Testimonials from './Testimonials/Testimonials'
 function Home() {
   
   return (
@@ -13,6 +15,9 @@ function Home() {
       <AboutHotel />
       <Rooms />
       <ExtraServices />
+      <Promotional />
+      <Facilities />
+      <Testimonials/>
     </>
   )
 }

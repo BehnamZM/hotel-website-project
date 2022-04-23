@@ -89,12 +89,12 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@include media(M){
   .card{
     height: 30vh;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@include media(L){
   .card{
     height: 40vh;
 

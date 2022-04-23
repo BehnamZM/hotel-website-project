@@ -1,0 +1,84 @@
+.testimonials-part {
+  height: 100vh;
+  background-image: url("./src/assets/hotel5.jpg");
+  position: relative;
+  background-attachment: fixed;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 0;
+}
+
+.testimonials-part .testimonials-overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.testimonials-part .testimonials-body {
+  z-index: 1;
+  width: 50%;
+  height: 100%;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+}
+
+.testimonials-part .testimonials-body h5 {
+  font-size: 22px;
+  font-weight: 200;
+}
+
+.testimonials-part .testimonials-body h3 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.testimonials-part .testimonials-body .swiper {
+  background-color: transparent;
+  height: 40%;
+  width: 100%;
+}
+
+.testimonials-part .testimonials-body .swiper-horizontal > .swiper-pagination-bullets,
+.testimonials-part .testimonials-body .swiper-pagination-bullets.swiper-pagination-horizontal,
+.testimonials-part .testimonials-body .swiper-pagination-custom,
+.testimonials-part .testimonials-body .swiper-pagination-fraction {
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.testimonials-part .testimonials-body .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.testimonials-part .testimonials-body .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0.2rem;
+  display: inline-block;
+}
+/*# sourceMappingURL=Testimonials.css.map */

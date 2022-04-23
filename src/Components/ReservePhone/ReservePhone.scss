@@ -1,0 +1,23 @@
+@import '../../Styles/variables';
+@import '../../Styles/mixin';
+
+.reservation{
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  flex-direction: row-reverse;
+  gap: 0.5rem;
+  margin-top: 2rem;
+
+  .phoneicon{
+    color: $primary;
+    font-size: 40px;
+  }
+
+  .phonenumber{
+    h4{
+      color: $primary;
+      font-size: 20px;
+    }
+  }
+}

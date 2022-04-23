@@ -1,0 +1,15 @@
+@import '../../Styles/variables';
+
+.iconbox {
+  background-color: transparent;
+  display: flex;
+  opacity: 0;
+  animation-delay: 0.5s;
+  margin-bottom: 2rem;
+
+  .staricon {
+    color: $primary;
+    background-color: transparent;
+    font-size: 20px;
+  }
+}

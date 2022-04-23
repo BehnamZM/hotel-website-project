@@ -1,0 +1,16 @@
+.facility-card .facility-card-body .facility-icon {
+  font-size: 50px;
+  color: #aa8453;
+}
+
+.facility-card .facility-card-body h6 {
+  font-size: 18px;
+  margin: 1rem 0;
+}
+
+.facility-card .facility-card-body p {
+  font-size: 15px;
+  font-weight: 200;
+  width: 70%;
+}
+/*# sourceMappingURL=FacilityCard.css.map */

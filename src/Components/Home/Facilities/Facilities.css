@@ -1,0 +1,32 @@
+.facilities-part {
+  min-height: 100vh;
+  margin-top: 3rem;
+}
+
+.facilities-part .facilities-header {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5rem;
+  border-left: 3px solid #aa8453;
+}
+
+.facilities-part .facilities-header h5 {
+  font-size: 22px;
+  font-weight: 200;
+}
+
+.facilities-part .facilities-header h3 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.facilities-part .facilities-cards {
+  margin-top: 2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+/*# sourceMappingURL=Facilities.css.map */

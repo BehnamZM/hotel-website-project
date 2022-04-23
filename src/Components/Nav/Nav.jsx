@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import './Nav.css'
 import {BiDownArrow} from 'react-icons/bi'
+import {TiThMenuOutline} from 'react-icons/ti'
 
 function Nav() {
   return (
@@ -21,6 +22,9 @@ function Nav() {
           <Link to='/gallery' className='link'>گالری</Link>
           <Link to='/news' className='link'>اخبار</Link>
           <Link to='/contact' className='link'>ارتباط باما</Link>
+        </div>
+        <div className="menuicon">
+          <TiThMenuOutline />
         </div>
       </div>
     </nav>

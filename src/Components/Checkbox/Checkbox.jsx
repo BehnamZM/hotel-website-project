@@ -7,12 +7,13 @@ function Checkbox() {
   return (
     <>
       <div className="checkroom">
-          <button>چک کن</button>
-          <Roomcheck />
-          <Childcheck />
-          <div className="calendar">تاریخ ورود</div>
-          <div className="calendar">تاریخ خروج</div>
-        </div>
+        <Roomcheck />
+        <Childcheck />
+        <div className="calendar checkitem">تاریخ ورود</div>
+        <div className="calendar checkitem">تاریخ خروج</div>
+        <button>چک کن</button>
+
+      </div>
     </>
   )
 }

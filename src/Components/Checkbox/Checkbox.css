@@ -9,7 +9,6 @@
   display: grid;
   -ms-grid-columns: (1fr)[5];
       grid-template-columns: repeat(5, 1fr);
-  background-color: #aa8453;
   width: 90%;
   text-align: center;
 }
@@ -49,5 +48,21 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .checkroom {
+    position: relative;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    height: 40vh;
+    gap: 0.5rem;
+    margin-top: 2rem;
+  }
+  .checkroom button {
+    height: 50px;
+  }
 }
 /*# sourceMappingURL=Checkbox.css.map */
