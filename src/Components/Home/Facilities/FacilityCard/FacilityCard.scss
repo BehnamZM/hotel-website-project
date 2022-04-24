@@ -1,20 +1,37 @@
 @import '../../../../Styles/variables';
+@import '../../../../Styles/mixin';
 
-.facility-card{
-  .facility-card-body{
-    .facility-icon{
+.facility-card {
+  .facility-card-body {
+    .facility-icon {
       font-size: 50px;
       color: $primary;
     }
-    h6{
+
+    h6 {
       font-size: 18px;
       margin: 1rem 0;
 
     }
-    p{
+
+    p {
       font-size: 15px;
       font-weight: 200;
       width: 70%;
     }
   }
 }
+
+@include media(M) {
+  .facility-card {
+    text-align: center;
+    .facility-card-body {
+      p {
+        margin: 0 auto;
+        text-align: justify;
+      }
+    }
+  }
+}
+
+@include media(L) {}

@@ -13,4 +13,14 @@
   font-weight: 200;
   width: 70%;
 }
+
+@media (max-width: 768px) {
+  .facility-card {
+    text-align: center;
+  }
+  .facility-card .facility-card-body p {
+    margin: 0 auto;
+    text-align: justify;
+  }
+}
 /*# sourceMappingURL=FacilityCard.css.map */

@@ -63,6 +63,23 @@
   font-size: 20px;
 }
 
+.mySwiper .swiper-horizontal > .swiper-pagination-bullets,
+.mySwiper .swiper-pagination-bullets.swiper-pagination-horizontal,
+.mySwiper .swiper-pagination-custom,
+.mySwiper .swiper-pagination-fraction {
+  background-color: transparent;
+  left: 90%;
+  bottom: 50%;
+  width: 10px;
+}
+
+.mySwiper .swiper-pagination-bullet {
+  display: block;
+  font-size: 30px;
+  padding: .1rem;
+  gap: 0.2rem;
+}
+
 .swiper-slide {
   position: relative;
 }
@@ -75,27 +92,10 @@
      object-fit: cover;
 }
 
-.swiper-horizontal > .swiper-pagination-bullets,
-.swiper-pagination-bullets.swiper-pagination-horizontal,
-.swiper-pagination-custom,
-.swiper-pagination-fraction {
-  background-color: transparent;
-  left: 90%;
-  bottom: 50%;
-  width: 10px;
-}
-
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 1rem;
   border: 2px solid #aa8453;
-}
-
-.swiper-pagination-bullet {
-  display: block;
-  font-size: 30px;
-  padding: .1rem;
-  gap: 0.2rem;
 }
 
 :root {
@@ -135,6 +135,22 @@
 @media (max-width: 768px) {
   .mySwiper .reservation {
     display: none;
+  }
+  .mySwiper .swiper-horizontal > .swiper-pagination-bullets,
+  .mySwiper .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .mySwiper .swiper-pagination-custom,
+  .mySwiper .swiper-pagination-fraction {
+    background-color: transparent;
+    left: 0;
+    bottom: 40%;
+    width: 100%;
+  }
+  .mySwiper .swiper-pagination-bullet {
+    display: inline;
+    font-size: 5px;
+    padding: 0.5rem;
+    gap: 0.2rem;
+    top: 60%;
   }
 }
 /*# sourceMappingURL=Slider.css.map */

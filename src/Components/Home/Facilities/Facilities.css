@@ -29,4 +29,14 @@
       grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
+
+@media (max-width: 768px) {
+  .facilities-part {
+    margin-bottom: 2rem;
+  }
+  .facilities-part .facilities-cards {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
 /*# sourceMappingURL=Facilities.css.map */

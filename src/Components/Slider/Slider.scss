@@ -48,6 +48,25 @@
 
     }
   }
+
+  .swiper-horizontal>.swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    background-color: transparent;
+    left: 90%;
+    bottom: 50%;
+    width: 10px;
+  }
+
+  .swiper-pagination-bullet {
+    display: block;
+    font-size: 30px;
+    padding: .1rem;
+    gap: 0.2rem;
+
+  }
+
 }
 
 .swiper-slide {
@@ -63,15 +82,7 @@
 
 
 
-.swiper-horizontal>.swiper-pagination-bullets,
-.swiper-pagination-bullets.swiper-pagination-horizontal,
-.swiper-pagination-custom,
-.swiper-pagination-fraction {
-  background-color: transparent;
-  left: 90%;
-  bottom: 50%;
-  width: 10px;
-}
+
 
 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
@@ -79,13 +90,7 @@
   border: 2px solid $primary;
 }
 
-.swiper-pagination-bullet {
-  display: block;
-  font-size: 30px;
-  padding: .1rem;
-  gap: 0.2rem;
 
-}
 
 :root {
   --swiper-theme-color: #aa8453;
@@ -107,10 +112,29 @@
   }
 }
 
-@include media(M){
+@include media(M) {
   .mySwiper {
     .reservation {
       display: none;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+      background-color: transparent;
+      left: 0;
+      bottom: 40%;
+      width: 100%;
+    }
+
+    .swiper-pagination-bullet {
+      display: inline;
+      font-size: 5px;
+      padding: 0.5rem;
+      gap: 0.2rem;
+      top: 60%;
+
     }
   }
 }

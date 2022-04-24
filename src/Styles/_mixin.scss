@@ -16,6 +16,7 @@
   font-weight: bold;
 }
 
+
 @mixin media($size) {
   @if($size == M){
     @media (max-width: 768px){

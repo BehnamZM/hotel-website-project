@@ -81,4 +81,19 @@
   margin: 0.2rem;
   display: inline-block;
 }
+
+@media (max-width: 768px) {
+  .testimonials-part .testimonials-body {
+    width: 90%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .testimonials-part {
+    height: 70vh;
+  }
+  .testimonials-part .testimonials-body {
+    width: 75%;
+  }
+}
 /*# sourceMappingURL=Testimonials.css.map */

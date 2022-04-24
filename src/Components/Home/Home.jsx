@@ -7,6 +7,11 @@ import ExtraServices from './ExtraServices/ExtraServices'
 import Promotional from './Promotional/Promotional'
 import Facilities from './Facilities/Facilities'
 import Testimonials from './Testimonials/Testimonials'
+import Structures from './Structures/Structures'
+import News from './News/News'
+import Reservation from './Reservation/Reservation'
+import Partners from './Partners/Partners'
+import Footer from '../Footer/Footer'
 function Home() {
   
   return (
@@ -18,6 +23,11 @@ function Home() {
       <Promotional />
       <Facilities />
       <Testimonials/>
+      <Structures />
+      <News />
+      <Reservation />
+      <Partners />
+      <Footer />
     </>
   )
 }

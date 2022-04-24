@@ -62,6 +62,19 @@
 
 
 
-@include media(M) {}
+@include media(M) {
+  .testimonials-part {
+    .testimonials-body{
+      width: 90%;
+    }
+  }
+}
 
-@include media(L) {}
+@include media(L) {
+  .testimonials-part {
+    height: 70vh;
+    .testimonials-body{
+      width: 75%;
+    }
+  }
+}

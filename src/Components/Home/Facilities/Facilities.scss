@@ -26,3 +26,13 @@
     gap: 2rem;
   }
 }
+
+@include media(M) {
+  .facilities-part{
+    margin-bottom: 2rem;
+    .facilities-cards{
+      grid-template-columns: 1fr;
+    }
+  }
+}
+@include media(L) {}
