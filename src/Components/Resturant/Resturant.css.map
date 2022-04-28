@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "Resturant.scss",
+        "../../Styles/_variables.scss",
+        "../../Styles/_mixin.scss"
+    ],
+    "names": [],
+    "file": "Resturant.css"
+}

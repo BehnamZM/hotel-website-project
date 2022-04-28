@@ -1,13 +1,24 @@
 import { useState } from 'react'
+import { useRoutes } from 'react-router-dom'
 import './App.css'
-import Home from './Components/Home/Home'
+import Nav from './Components/Nav/Nav'
+import routes from './routes'
+import Footer from './Components/Footer/Footer'
+import STTButton from './Components/STTButton/STTButton'
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  let router = useRoutes(routes)
+
 
   return (
     <div className="App">
-      <Home />
+      <Nav />
+      <STTButton />
+      {router}
+      <Footer />
+
+
     </div>
   )
 }

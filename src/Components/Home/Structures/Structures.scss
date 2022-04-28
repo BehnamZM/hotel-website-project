@@ -1,0 +1,63 @@
+@import '../../../Styles/variables';
+@import '../../../Styles/mixin';
+
+
+
+.structures-container {
+  margin: 5rem 0;
+  .structures-boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .structures-img {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+
+
+      img {
+        width: 100%;
+        height: 100%;
+        transition: all .3s ease;
+      }
+    }
+
+    .structures-img:hover img {
+      transform: scale(1.1);
+    }
+
+
+
+    .structures-introduction {
+      padding: 2rem;
+
+      h5 {
+        @include h5Style;
+      }
+
+      h3 {
+        @include h3Style;
+
+      }
+
+      >p {
+        text-align: justify;
+        font-weight: bold;
+        opacity: 0.5;
+        margin-top: 0.5rem;
+      }
+    }
+  }
+}
+
+@include media(M) {
+  .structures-container {
+    .structures-boxes{
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@include media(L) {
+ 
+}

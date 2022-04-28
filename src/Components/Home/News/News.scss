@@ -1,0 +1,74 @@
+@import '../../../Styles/variables';
+@import '../../../Styles/mixin';
+
+.news {
+  min-height: 100vh;
+  background-color: $success;
+  padding-bottom: 3rem;
+
+  .news-body {
+    color: $secondary;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+
+    .news-title {
+      margin: 3rem 0;
+      border-left: 3px solid $primary;
+      width: fit-content;
+      padding-left: 1rem;
+
+      h5 {
+        font-size: 15px;
+        font-weight: 200;
+      }
+
+      h3 {
+        @include h3Style;
+      }
+    }
+
+    .news-boxes {
+      .swiper {
+        width: 100%;
+        height: 70vh;
+        overflow-y: hidden;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+@include media(M) {
+  
+}
+
+@include media(L) {
+ 
+}

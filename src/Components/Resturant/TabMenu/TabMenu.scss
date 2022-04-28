@@ -1,0 +1,90 @@
+@import '../../../Styles/variables';
+@import '../../../Styles/mixin';
+
+.tabmenu-part {
+  background-color: $success;
+  min-height: 100vh;
+
+  .tabmenu {
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+
+    .tabmenu-title {
+      width: 100%;
+      text-align: center;
+      color: #fff;
+
+      h5 {
+        @include h5Style
+      }
+
+      h3 {
+        @include h3Style
+      }
+    }
+
+    .tabs-part {
+      *{
+        direction: ltr;
+      }
+      .css-1k9ek97 {
+        background-color: transparent;
+        direction: ltr;
+      }
+      button {
+        color: #fff;
+        padding: 2rem;
+      }
+
+      .css-ptiqhd-MuiSvgIcon-root{
+        color: $primary;
+        border: 1px solid $primary;
+        padding: 0.4rem ;
+        border-radius: 50%;
+      }
+
+      .css-1aquho2-MuiTabs-indicator{
+        background-color: $primary;
+        box-shadow: 0 0 10px 0 $primary;
+      }
+
+    }
+
+    .tab-body {
+      .foodslist {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30%;
+
+        .fooditem {
+          color: #fff;
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+
+          .food-title {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 1rem;
+            border-bottom: 2px dashed $primary;
+
+            .food-name {
+              color: $primary;
+            }
+
+            .food-price {
+              color: $light;
+            }
+          }
+
+          .food-inner {
+            color: $light;
+          }
+        }
+      }
+    }
+  }
+}

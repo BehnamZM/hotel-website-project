@@ -1,0 +1,72 @@
+@import '../../../../Styles/variables';
+@import '../../../../Styles/mixin';
+
+
+.teammate-card {
+  height: 50vh;
+
+  .teammate-img {
+    width: 100%;
+    height: 80%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .teammate-profile {
+    position: relative;
+    height: 20%;
+    text-align: center;
+    padding-top: 1rem;
+    overflow: hidden;
+
+    .teammate-name {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .teammate-role {
+      font-size: 15px;
+      font-weight: 200;
+    }
+
+    .teammate-socials {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      transition: all .3s ease;
+      top: 100%;
+      background-color: #fff;
+
+      .teammate-socials-icons {
+        text-align: center;
+        padding-top: 1rem;
+
+        .teammate-socials-icon {
+          font-size: 20px;
+          color: $primary;
+          padding: 0.3rem;
+          transition: all .3s ease;
+          cursor: pointer;
+
+        }
+        .teammate-socials-icon:hover {
+          color: $success;
+        }
+      }
+
+      .teammate-email {
+        text-align: center;
+        font-size: 12px;
+        font-weight: 900;
+      }
+    }
+  }
+}
+
+.teammate-card:hover .teammate-socials {
+  top: 0;
+}

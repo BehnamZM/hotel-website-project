@@ -1,0 +1,38 @@
+@import '../../Styles/variables';
+
+.button {
+  position: relative;
+  border: none;
+  outline: none;
+  padding:0.7rem 1.2rem;
+  background-color: $primary;
+  margin: 1rem 0;
+  font-weight: bold;
+  color: $secondary;
+  font-family: vazir;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .button-overlay{
+    position: absolute;
+    background-color: $success;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 0;
+    transition: all .3s ease;
+  }
+
+  > p{
+    z-index: 1;
+    margin: 0;
+  }
+  
+}
+
+.button:hover .button-overlay {
+    width: 100%;
+    right: 0;
+  }

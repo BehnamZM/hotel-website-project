@@ -4,7 +4,7 @@
 
 .services-part {
   background-color: $success;
-  height: 100vh;
+  min-height: 100vh;
   margin-top: 6rem;
 
   .services-container {
@@ -93,6 +93,7 @@
   .services-part {
     .services-container {
       grid-template-columns: 1fr;
+      padding-top: 3rem;
 
       .services-explain {
         text-align: center;
@@ -113,7 +114,7 @@
       }
 
       .services-slider {
-        height: 50vh;
+        padding-bottom: 1rem;
       }
     }
   }

@@ -1,5 +1,10 @@
 @import './font.css';
 
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   direction: rtl;
   margin: 0;
@@ -7,5 +12,11 @@ body {
   border: none;
   outline: none;
   font-family: vazir;
+
 }
 
+@media screen and (max-width:'768px') {
+    html,body {
+    overflow-x: hidden;
+    }
+}

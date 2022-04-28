@@ -1,14 +1,10 @@
 import React from 'react'
-import Slider from '../Slider/Slider'
-import Nav from '../Nav/Nav'
 
-function Header() {
+function Header({children}) {
   return (
     <>
       <header>
-        <Nav />
-        <Slider />
-        
+        {children}
       </header>
     </>
   )

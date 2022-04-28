@@ -1,0 +1,127 @@
+footer {
+  background-color: #222;
+  height: 60vh;
+}
+
+footer .footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr 1fr;
+      grid-template-columns: 2fr 1fr 1fr;
+  gap: 2rem;
+  color: #fff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+footer .footer .footer-about h3 {
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+
+footer .footer .footer-about p {
+  text-align: justify;
+  width: 70%;
+}
+
+footer .footer .footer-explore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .footer .footer-explore li {
+  list-style: none;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  cursor: pointer;
+  margin: 0.2rem;
+}
+
+footer .footer .footer-explore li:hover {
+  color: #aa8453;
+}
+
+footer .footer .footer-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer .footer-contact .address {
+  font-size: 20px;
+}
+
+footer .footer .footer-contact .email {
+  padding: 0.5rem;
+  border-bottom: 2px solid #aa8453;
+}
+
+footer .footer .footer-contact .reservation {
+  margin-bottom: 1.5rem;
+}
+
+footer .footer .footer-contact .reservation p {
+  display: none;
+}
+
+footer .footer .footer-contact .reservation h4 {
+  color: #fff;
+}
+
+footer .footer .footer-contact .reservation .phoneicon {
+  color: #fff;
+}
+
+footer .footer .footer-contact .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: .5rem;
+  margin-top: 1rem;
+}
+
+footer .footer .footer-contact .socials .social-icon {
+  color: #fff;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  font-size: 20px;
+}
+
+footer .footer .footer-contact .socials .social-icon:hover {
+  color: #aa8453;
+}
+
+footer .copyright {
+  text-align: center;
+  padding: 2rem;
+  background-color: #1e1e1e;
+  color: #fff;
+  font-size: 10px;
+}
+
+@media (max-width: 768px) {
+  footer .footer {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  footer .footer .footer-about p {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=Footer.css.map */

@@ -74,6 +74,7 @@
   width: 100%;
   bottom: 0;
   left: 0;
+  z-index: 10;
 }
 
 .testimonials-part .testimonials-body .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
@@ -83,6 +84,9 @@
 }
 
 @media (max-width: 768px) {
+  .testimonials-part {
+    height: 70vh;
+  }
   .testimonials-part .testimonials-body {
     width: 90%;
   }

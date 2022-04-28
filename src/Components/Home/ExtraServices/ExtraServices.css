@@ -1,6 +1,6 @@
 .services-part {
   background-color: #222;
-  height: 100vh;
+  min-height: 100vh;
   margin-top: 6rem;
 }
 
@@ -95,6 +95,7 @@
   .services-part .services-container {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    padding-top: 3rem;
   }
   .services-part .services-container .services-explain {
     text-align: center;
@@ -111,7 +112,7 @@
     margin-bottom: 2rem;
   }
   .services-part .services-container .services-slider {
-    height: 50vh;
+    padding-bottom: 1rem;
   }
   .swiper-horizontal > .swiper-pagination-bullets,
   .swiper-pagination-bullets.swiper-pagination-horizontal,

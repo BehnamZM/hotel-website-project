@@ -1,0 +1,103 @@
+.reservation-part {
+  height: 70vh;
+  background-image: url("./src/assets/hotel9.jpg");
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+}
+
+.reservation-part .reservation-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.reservation-part .reservation-overlay .reservation-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 25%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.reservation-part .reservation-overlay .reservation-container .reservation-explain {
+  color: #fff;
+}
+
+.reservation-part .reservation-overlay .reservation-container .reservation-explain .iconbox {
+  opacity: 1;
+}
+
+.reservation-part .reservation-overlay .reservation-container .reservation-explain p {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: justify;
+}
+
+.reservation-part .reservation-overlay .reservation-container .reservation-explain .phoneicon {
+  color: #fff;
+}
+
+.reservation-part .reservation-overlay .reservation-container .reservation-explain .phonenumber h4 {
+  color: #fff;
+}
+
+.reservation-part .reservation-overlay .reservation-container .reservation-check {
+  background-color: #fff;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+.reservation-part .reservation-overlay .reservation-container .reservation-check h5 {
+  font-size: 18px;
+  font-weight: 200;
+}
+
+.reservation-part .reservation-overlay .reservation-container .reservation-check h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.reservation-part .reservation-overlay .reservation-container .reservation-check .checkroom {
+  position: relative;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  width: 100%;
+  height: 50vh;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.reservation-part .reservation-overlay .reservation-container .reservation-check .checkroom button {
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .reservation-part {
+    min-height: 100vh;
+  }
+  .reservation-part .reservation-overlay .reservation-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .reservation-part .reservation-overlay .reservation-container .reservation-check {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .reservation-part .reservation-overlay .reservation-container {
+    gap: 1rem;
+  }
+}
+/*# sourceMappingURL=Reservation.css.map */

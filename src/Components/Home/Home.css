@@ -1,1 +1,4 @@
-/* No CSS *//*# sourceMappingURL=Home.css.map */
+.about-container * {
+  overflow-x: hidden;
+}
+/*# sourceMappingURL=Home.css.map */

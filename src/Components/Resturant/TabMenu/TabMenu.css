@@ -1,0 +1,106 @@
+.tabmenu-part {
+  background-color: #222;
+  min-height: 100vh;
+}
+
+.tabmenu-part .tabmenu {
+  padding-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2rem;
+}
+
+.tabmenu-part .tabmenu .tabmenu-title {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+
+.tabmenu-part .tabmenu .tabmenu-title h5 {
+  font-size: 22px;
+  font-weight: 200;
+}
+
+.tabmenu-part .tabmenu .tabmenu-title h3 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.tabmenu-part .tabmenu .tabs-part * {
+  direction: ltr;
+}
+
+.tabmenu-part .tabmenu .tabs-part .css-1k9ek97 {
+  background-color: transparent;
+  direction: ltr;
+}
+
+.tabmenu-part .tabmenu .tabs-part button {
+  color: #fff;
+  padding: 2rem;
+}
+
+.tabmenu-part .tabmenu .tabs-part .css-ptiqhd-MuiSvgIcon-root {
+  color: #aa8453;
+  border: 1px solid #aa8453;
+  padding: 0.4rem;
+  border-radius: 50%;
+}
+
+.tabmenu-part .tabmenu .tabs-part .css-1aquho2-MuiTabs-indicator {
+  background-color: #aa8453;
+  -webkit-box-shadow: 0 0 10px 0 #aa8453;
+          box-shadow: 0 0 10px 0 #aa8453;
+}
+
+.tabmenu-part .tabmenu .tab-body .foodslist {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 30%;
+}
+
+.tabmenu-part .tabmenu .tab-body .foodslist .fooditem {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+}
+
+.tabmenu-part .tabmenu .tab-body .foodslist .fooditem .food-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 1rem;
+  border-bottom: 2px dashed #aa8453;
+}
+
+.tabmenu-part .tabmenu .tab-body .foodslist .fooditem .food-title .food-name {
+  color: #aa8453;
+}
+
+.tabmenu-part .tabmenu .tab-body .foodslist .fooditem .food-title .food-price {
+  color: #d3d3d3;
+}
+
+.tabmenu-part .tabmenu .tab-body .foodslist .fooditem .food-inner {
+  color: #d3d3d3;
+}
+/*# sourceMappingURL=TabMenu.css.map */

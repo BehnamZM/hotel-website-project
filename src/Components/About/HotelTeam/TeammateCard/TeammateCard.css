@@ -1,0 +1,72 @@
+.teammate-card {
+  height: 50vh;
+}
+
+.teammate-card .teammate-img {
+  width: 100%;
+  height: 80%;
+}
+
+.teammate-card .teammate-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.teammate-card .teammate-profile {
+  position: relative;
+  height: 20%;
+  text-align: center;
+  padding-top: 1rem;
+  overflow: hidden;
+}
+
+.teammate-card .teammate-profile .teammate-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.teammate-card .teammate-profile .teammate-role {
+  font-size: 15px;
+  font-weight: 200;
+}
+
+.teammate-card .teammate-profile .teammate-socials {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  top: 100%;
+  background-color: #fff;
+}
+
+.teammate-card .teammate-profile .teammate-socials .teammate-socials-icons {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.teammate-card .teammate-profile .teammate-socials .teammate-socials-icons .teammate-socials-icon {
+  font-size: 20px;
+  color: #aa8453;
+  padding: 0.3rem;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  cursor: pointer;
+}
+
+.teammate-card .teammate-profile .teammate-socials .teammate-socials-icons .teammate-socials-icon:hover {
+  color: #222;
+}
+
+.teammate-card .teammate-profile .teammate-socials .teammate-email {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.teammate-card:hover .teammate-socials {
+  top: 0;
+}
+/*# sourceMappingURL=TeammateCard.css.map */

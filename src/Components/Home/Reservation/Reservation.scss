@@ -1,0 +1,108 @@
+@import '../../../Styles/variables';
+@import '../../../Styles/mixin';
+
+.reservation-part {
+  height: 70vh;
+  background-image: url('./src/assets/hotel9.jpg');
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+
+  .reservation-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    .reservation-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25%;
+      align-items: center;
+      height: 100%;
+
+      .reservation-explain {
+        color: #fff;
+
+        .iconbox {
+          opacity: 1;
+        }
+
+        p {
+          font-size: 20px;
+          font-weight: bold;
+          text-align: justify;
+        }
+
+        .phoneicon {
+          color: #fff;
+        }
+
+        .phonenumber {
+          h4 {
+            color: #fff;
+          }
+        }
+      }
+
+      .reservation-check {
+        background-color: #fff;
+        padding: 2rem;
+        margin-top: 3rem;
+
+        h5 {
+          font-size: 18px;
+          font-weight: 200;
+        }
+
+        h3 {
+          font-size: 24px;
+          font-weight: bold;
+          margin-bottom: 1rem;
+        }
+
+        .checkroom {
+          position: relative;
+          grid-template-columns: 1fr;
+          width: 100%;
+          height: 50vh;
+          transform: translateX(0);
+
+          button {
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media(M) {
+  .reservation-part {
+    min-height: 100vh;
+    .reservation-overlay {
+      .reservation-container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+
+        .reservation-check{
+          margin-top:1rem;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@include media(L) {
+  .reservation-part {
+    .reservation-overlay {
+      .reservation-container {
+        gap: 1rem;
+
+      }
+    }
+  }
+}

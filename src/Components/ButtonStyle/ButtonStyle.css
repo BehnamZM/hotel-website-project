@@ -1,0 +1,43 @@
+.button {
+  position: relative;
+  border: none;
+  outline: none;
+  padding: 0.7rem 1.2rem;
+  background-color: #aa8453;
+  margin: 1rem 0;
+  font-weight: bold;
+  color: #fff;
+  font-family: vazir;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.button .button-overlay {
+  position: absolute;
+  background-color: #222;
+  height: 100%;
+  top: 0;
+  left: 0;
+  width: 0;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.button > p {
+  z-index: 1;
+  margin: 0;
+}
+
+.button:hover .button-overlay {
+  width: 100%;
+  right: 0;
+}
+/*# sourceMappingURL=ButtonStyle.css.map */

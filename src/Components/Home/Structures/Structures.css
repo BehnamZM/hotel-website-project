@@ -1,0 +1,57 @@
+.structures-container {
+  margin: 5rem 0;
+}
+
+.structures-container .structures-boxes {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.structures-container .structures-boxes .structures-img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.structures-container .structures-boxes .structures-img img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.structures-container .structures-boxes .structures-img:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.structures-container .structures-boxes .structures-introduction {
+  padding: 2rem;
+}
+
+.structures-container .structures-boxes .structures-introduction h5 {
+  font-size: 22px;
+  font-weight: 200;
+}
+
+.structures-container .structures-boxes .structures-introduction h3 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.structures-container .structures-boxes .structures-introduction > p {
+  text-align: justify;
+  font-weight: bold;
+  opacity: 0.5;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .structures-container .structures-boxes {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+/*# sourceMappingURL=Structures.css.map */

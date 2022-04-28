@@ -1,0 +1,53 @@
+.contact-main-part {
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 25%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-main-part .contact-ways h3 {
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.contact-main-part .contact-ways p {
+  text-align: justify;
+}
+
+.contact-main-part .contact-ways .iconbox {
+  opacity: 1;
+}
+
+.contact-main-part .contact-form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 0.5rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.contact-main-part .contact-form .contact-input {
+  width: 100%;
+  padding: 1rem 0;
+  border: none;
+  outline: none;
+  font-family: vazir;
+}
+
+.contact-main-part .contact-form .contact-input:focus {
+  border-bottom: 1px solid #aa8453;
+}
+
+.contact-main-part .contact-form .button {
+  width: 100%;
+}
+/*# sourceMappingURL=ContactForm.css.map */

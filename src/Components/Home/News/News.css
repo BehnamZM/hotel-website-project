@@ -1,0 +1,70 @@
+.news {
+  min-height: 100vh;
+  background-color: #222;
+  padding-bottom: 3rem;
+}
+
+.news .news-body {
+  color: #fff;
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+.news .news-body .news-title {
+  margin: 3rem 0;
+  border-left: 3px solid #aa8453;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-left: 1rem;
+}
+
+.news .news-body .news-title h5 {
+  font-size: 15px;
+  font-weight: 200;
+}
+
+.news .news-body .news-title h3 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.news .news-body .news-boxes .swiper {
+  width: 100%;
+  height: 70vh;
+  overflow-y: hidden;
+}
+
+.news .news-body .news-boxes .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.news .news-body .news-boxes .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=News.css.map */

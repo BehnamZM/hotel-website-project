@@ -5,6 +5,8 @@ nav {
   height: 90px;
   top: 0;
   right: 0;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
 nav .nav {
@@ -68,6 +70,18 @@ nav .links .link .arrowicon {
 
 nav .links .link:hover {
   color: #aa8453;
+}
+
+nav.active {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+}
+
+nav.active .link {
+  color: #000;
 }
 
 @media (max-width: 768px) {
