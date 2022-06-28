@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import { MdOutlineBathtub,MdPool} from 'react-icons/md'
 import { GiCampCookingPot } from 'react-icons/gi'
 import { BiBed } from 'react-icons/bi'
@@ -20,7 +21,7 @@ function Roomcard(props) {
             <MdPool />
             <BiBed />
           </div>
-          <a href="">جزییات <BsArrowLeft /></a>
+          <Link to={`/room/:${props.title}`}>جزییات <BsArrowLeft /></Link>
         </div>
       </div>
     </div>

@@ -18,6 +18,29 @@
   gap: 2rem;
 }
 
+.tabmenu-part .tabmenu .tabs-part {
+  text-align: center;
+}
+
+.tabmenu-part .tabmenu .tab-item {
+  cursor: pointer;
+  color: #fff;
+  padding: .3rem;
+  border-radius: 5px;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+  display: inline;
+  margin-left: 1rem;
+}
+
+.tabmenu-part .tabmenu .tab-item-active {
+  background-color: #aa8453;
+}
+
+.tabmenu-part .tabmenu .tab-item:hover {
+  background-color: #aa8453;
+}
+
 .tabmenu-part .tabmenu .tabmenu-title {
   width: 100%;
   text-align: center;
@@ -34,42 +57,18 @@
   font-weight: bold;
 }
 
-.tabmenu-part .tabmenu .tabs-part * {
-  direction: ltr;
-}
-
-.tabmenu-part .tabmenu .tabs-part .css-1k9ek97 {
-  background-color: transparent;
-  direction: ltr;
-}
-
-.tabmenu-part .tabmenu .tabs-part button {
-  color: #fff;
-  padding: 2rem;
-}
-
-.tabmenu-part .tabmenu .tabs-part .css-ptiqhd-MuiSvgIcon-root {
-  color: #aa8453;
-  border: 1px solid #aa8453;
-  padding: 0.4rem;
-  border-radius: 50%;
-}
-
-.tabmenu-part .tabmenu .tabs-part .css-1aquho2-MuiTabs-indicator {
-  background-color: #aa8453;
-  -webkit-box-shadow: 0 0 10px 0 #aa8453;
-          box-shadow: 0 0 10px 0 #aa8453;
-}
-
-.tabmenu-part .tabmenu .tab-body .foodslist {
+.tabmenu-part .tab-body .foodslist {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  gap: 30%;
+  -webkit-column-gap: 20%;
+          column-gap: 20%;
+  row-gap: 12%;
+  margin-top: 2rem;
 }
 
-.tabmenu-part .tabmenu .tab-body .foodslist .fooditem {
+.tabmenu-part .tab-body .foodslist .fooditem {
   color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -81,7 +80,7 @@
   gap: 0.5rem;
 }
 
-.tabmenu-part .tabmenu .tab-body .foodslist .fooditem .food-title {
+.tabmenu-part .tab-body .foodslist .fooditem .food-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -92,15 +91,15 @@
   border-bottom: 2px dashed #aa8453;
 }
 
-.tabmenu-part .tabmenu .tab-body .foodslist .fooditem .food-title .food-name {
+.tabmenu-part .tab-body .foodslist .fooditem .food-title .food-name {
   color: #aa8453;
 }
 
-.tabmenu-part .tabmenu .tab-body .foodslist .fooditem .food-title .food-price {
+.tabmenu-part .tab-body .foodslist .fooditem .food-title .food-price {
   color: #d3d3d3;
 }
 
-.tabmenu-part .tabmenu .tab-body .foodslist .fooditem .food-inner {
+.tabmenu-part .tab-body .foodslist .fooditem .food-inner {
   color: #d3d3d3;
 }
 /*# sourceMappingURL=TabMenu.css.map */

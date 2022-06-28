@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useRoutes } from 'react-router-dom'
 import './App.css'
 import Nav from './Components/Nav/Nav'
@@ -11,14 +11,13 @@ function App() {
   let router = useRoutes(routes)
 
 
+
   return (
     <div className="App">
       <Nav />
       <STTButton />
       {router}
       <Footer />
-
-
     </div>
   )
 }

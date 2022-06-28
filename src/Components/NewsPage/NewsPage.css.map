@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAIA,AAAA,UAAU,CAAA;EACR,UAAU,EAAE,KAAK;EACjB,gBAAgB,ECJT,IAAI;CDeZ;;AAbD,AAGE,UAHQ,CAGR,eAAe,CAAA;EACb,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,cAAa;EACpC,GAAG,EAAE,IAAI;EACT,OAAO,EAAE,MAAM;CAKhB;;AAZH,AASI,UATM,CAGR,eAAe,CAMb,UAAU,CAAA;EACR,aAAa,EAAE,IAAI;CACpB",
     "sources": [
         "NewsPage.scss",
         "../../Styles/_variables.scss",

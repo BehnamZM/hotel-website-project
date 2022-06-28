@@ -11,6 +11,30 @@
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
+    
+
+    .tabs-part {
+      text-align: center;
+    }
+    
+    .tab-item {
+      cursor: pointer;
+      color: #fff;
+      padding: .3rem;
+      border-radius: 5px;
+      transition: all .3s ease-in;
+      display: inline;
+      margin-left: 1rem;
+    }
+    
+    .tab-item-active {
+      background-color: $primary;
+    }
+    
+    
+    .tab-item:hover {
+      background-color: $primary;
+    }
 
     .tabmenu-title {
       width: 100%;
@@ -25,66 +49,43 @@
         @include h3Style
       }
     }
+  }
 
-    .tabs-part {
-      *{
-        direction: ltr;
-      }
-      .css-1k9ek97 {
-        background-color: transparent;
-        direction: ltr;
-      }
-      button {
+  .tab-body {
+    .foodslist {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 20%;
+      row-gap: 12%;
+      margin-top: 2rem;
+
+      .fooditem {
         color: #fff;
-        padding: 2rem;
-      }
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
 
-      .css-ptiqhd-MuiSvgIcon-root{
-        color: $primary;
-        border: 1px solid $primary;
-        padding: 0.4rem ;
-        border-radius: 50%;
-      }
-
-      .css-1aquho2-MuiTabs-indicator{
-        background-color: $primary;
-        box-shadow: 0 0 10px 0 $primary;
-      }
-
-    }
-
-    .tab-body {
-      .foodslist {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 30%;
-
-        .fooditem {
-          color: #fff;
+        .food-title {
           display: flex;
-          flex-direction: column;
-          gap: 0.5rem;
+          justify-content: space-between;
+          padding-bottom: 1rem;
+          border-bottom: 2px dashed $primary;
 
-          .food-title {
-            display: flex;
-            justify-content: space-between;
-            padding-bottom: 1rem;
-            border-bottom: 2px dashed $primary;
-
-            .food-name {
-              color: $primary;
-            }
-
-            .food-price {
-              color: $light;
-            }
+          .food-name {
+            color: $primary;
           }
 
-          .food-inner {
+          .food-price {
             color: $light;
           }
         }
+
+        .food-inner {
+          color: $light;
+        }
       }
     }
+
   }
 }
+

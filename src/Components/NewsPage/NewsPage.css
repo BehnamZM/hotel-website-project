@@ -1,1 +1,18 @@
-/* No CSS *//*# sourceMappingURL=NewsPage.css.map */
+.news-part {
+  min-height: 100vh;
+  background-color: #222;
+}
+
+.news-part .news-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 4rem 0;
+}
+
+.news-part .news-container .news-card {
+  margin-bottom: 4rem;
+}
+/*# sourceMappingURL=NewsPage.css.map */

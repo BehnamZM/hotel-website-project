@@ -3,6 +3,8 @@ import { NavLink } from 'react-router-dom'
 import './Nav.css'
 import {BiDownArrow} from 'react-icons/bi'
 import {TiThMenuOutline} from 'react-icons/ti'
+import logo1 from '../../assets/logo.png'
+import logo2 from '../../assets/logo2.png'
 
 function Nav() {
 
@@ -22,7 +24,7 @@ function Nav() {
     <nav className={navbar ? 'active' : ''}>
       <div className="nav">
         <div className="logo">
-          <img src={navbar ? './src/assets/logo2.png' : './src/assets/logo.png'} />
+          <img src={navbar ? logo2 : logo1} />
         </div>
         <div className="links">
           <NavLink to='/' className='link'>خانه</NavLink>

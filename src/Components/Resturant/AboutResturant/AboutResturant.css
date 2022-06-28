@@ -1,0 +1,62 @@
+.about-resturant {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about-resturant p {
+  opacity: 0.6;
+}
+
+.about-resturant .about-resturant-title {
+  width: 70%;
+}
+
+.about-resturant .about-resturant-title .iconbox {
+  opacity: 1;
+}
+
+.about-resturant .about-resturant-title > h5 {
+  font-size: 15px;
+  font-weight: 200;
+}
+
+.about-resturant .about-resturant-title > h3 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.about-resturant .resturant-rules h5 {
+  font-size: 15px;
+  font-weight: 900;
+  margin: 2rem 0 1rem;
+}
+
+.about-resturant .resturant-rules .hours .working-hours {
+  margin: 0.5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+}
+
+.about-resturant .resturant-rules .hours .working-hours .hours-icon {
+  color: #aa8453;
+}
+/*# sourceMappingURL=AboutResturant.css.map */

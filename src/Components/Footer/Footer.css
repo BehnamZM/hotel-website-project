@@ -115,10 +115,16 @@ footer .copyright {
 }
 
 @media (max-width: 768px) {
+  footer {
+    min-height: 100vh;
+  }
   footer .footer {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     gap: 1rem;
+  }
+  footer .footer .footer-about {
+    padding-top: 1rem;
   }
   footer .footer .footer-about p {
     width: 100%;

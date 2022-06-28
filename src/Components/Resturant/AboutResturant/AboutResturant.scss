@@ -1,0 +1,59 @@
+@import '../../../Styles/variables';
+@import '../../../Styles/mixin';
+
+
+.about-resturant {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: center;
+
+  p{
+    opacity: 0.6;
+  }
+
+  .about-resturant-title {
+    width: 70%;
+
+    .iconbox {
+      opacity: 1;
+    }
+
+    >h5 {
+      font-size: 15px;
+      font-weight: 200;
+
+    }
+
+    >h3 {
+      @include h3Style;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .resturant-rules {
+    h5 {
+      font-size: 15px;
+      font-weight: 900;
+      margin: 2rem 0 1rem;
+    }
+
+    .hours {
+
+      .working-hours {
+        margin: 0.5rem 0;
+        .hours-icon {
+          color: $primary;
+        }
+
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+    }
+
+    .resturant-rooms-service {}
+  }
+}

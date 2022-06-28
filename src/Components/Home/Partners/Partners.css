@@ -4,6 +4,7 @@
   -ms-grid-columns: 1.5fr 1fr;
       grid-template-columns: 1.5fr 1fr;
   height: 100px;
+  margin: 1rem 0;
 }
 
 .partners-slider .swiper {
@@ -39,6 +40,7 @@
   .partners-slider {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    height: 7vh;
   }
   .partners-slider .swiper-slide img {
     width: 90%;

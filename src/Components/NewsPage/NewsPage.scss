@@ -1,2 +1,18 @@
 @import '../../Styles/variables';
 @import '../../Styles/mixin';
+
+
+.news-part{
+  min-height: 100vh;
+  background-color: $success;
+  .news-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    padding: 4rem 0;
+
+    .news-card{
+      margin-bottom: 4rem;
+    }
+  }
+}

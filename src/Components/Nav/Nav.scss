@@ -50,7 +50,8 @@ nav {
         font-size: 13px;
       }
     }
-    .link:hover{
+
+    .link:hover {
       color: $primary;
     }
 
@@ -63,30 +64,58 @@ nav.active {
   top: 0;
   right: 0;
   width: 100%;
+
   .link {
     color: #000;
   }
 
 }
 
-@include media(M){
-  nav{
-
-    .logo{
+@include media(M) {
+  nav {
+    overflow-x: hidden;
+    width: 100vw;
+    right: 0;
+    .logo {
       width: 40%;
     }
-    .links{
+
+    .links {
       display: none;
+      padding: 2rem 1rem 0 0;
+      width: 100%;
+      height: 100vh;
+      position: absolute;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 1.5rem;
+      background-color: #fff;
+      top: 0;
+      right: -100%;
+
+      .link {
+        color: #000;
+      }
     }
 
-    .menuicon{
+    .menuicon {
       display: block;
       color: $primary;
       font-size: 20px;
     }
   }
+
+  nav.active {
+    width: 100vw;
+    top: 0;
+    right: -15%;
+  
+    .link {
+      color: #000;
+    }
+  
+  }
 }
 
-@include media(L){
-  
-}
+@include media(L) {}

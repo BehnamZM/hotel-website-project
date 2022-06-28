@@ -12,11 +12,13 @@ body {
   border: none;
   outline: none;
   font-family: vazir;
+  position: relative;
+  overflow-x: hidden;
 
 }
 
 @media screen and (max-width:'768px') {
     html,body {
-    overflow-x: hidden;
+      overflow-x: hidden;
     }
 }

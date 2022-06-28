@@ -65,7 +65,7 @@
 
 @include media(M) {
   .testimonials-part {
-    height: 70vh;
+    min-height: 70vh;
     .testimonials-body{
       width: 90%;
     }
@@ -74,7 +74,7 @@
 
 @include media(L) {
   .testimonials-part {
-    height: 70vh;
+    min-height: 70vh;
     .testimonials-body{
       width: 75%;
     }
