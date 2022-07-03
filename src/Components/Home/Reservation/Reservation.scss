@@ -81,15 +81,18 @@
 
 @include media(M) {
   .reservation-part {
-    min-height: 100vh;
+    min-height: 150vh;
+
     .reservation-overlay {
       .reservation-container {
         grid-template-columns: 1fr;
         gap: 1rem;
 
-        .reservation-check{
-          margin-top:1rem;
+        .reservation-check {
+          margin-top: 1rem;
           margin-bottom: 1rem;
+
+
         }
       }
     }

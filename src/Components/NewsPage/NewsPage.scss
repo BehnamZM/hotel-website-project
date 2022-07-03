@@ -16,3 +16,11 @@
     }
   }
 }
+
+@include media(M){
+  .news-part{
+    .news-container{
+      grid-template-columns: 1fr;
+    }
+  }
+}

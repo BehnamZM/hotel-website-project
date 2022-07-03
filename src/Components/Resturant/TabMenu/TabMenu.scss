@@ -11,12 +11,12 @@
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
-    
+
 
     .tabs-part {
       text-align: center;
     }
-    
+
     .tab-item {
       cursor: pointer;
       color: #fff;
@@ -26,12 +26,12 @@
       display: inline;
       margin-left: 1rem;
     }
-    
+
     .tab-item-active {
       background-color: $primary;
     }
-    
-    
+
+
     .tab-item:hover {
       background-color: $primary;
     }
@@ -89,3 +89,25 @@
   }
 }
 
+
+@include media(M) {
+  .tabmenu-part {
+    min-height: 140vh;
+    margin-top: 2rem;
+
+    .tabmenu{
+      font-size: 12px;
+      .tab-item{
+        margin-left: .1rem;
+      }
+    }
+
+    .tab-body {
+      .foodslist {
+        grid-template-columns: 1fr;
+        column-gap: 20%;
+        row-gap: 5%;
+      }
+    }
+  }
+}

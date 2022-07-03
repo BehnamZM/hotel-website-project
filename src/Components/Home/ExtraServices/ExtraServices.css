@@ -121,6 +121,9 @@
     left: 10%;
     top: 0%;
   }
+  .mySwiper .swiper-horizontal > .swiper-pagination-bullets, .mySwiper .swiper-pagination-bullets.swiper-pagination-horizontal, .mySwiper .swiper-pagination-custom, .mySwiper .swiper-pagination-fraction {
+    top: 0;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {

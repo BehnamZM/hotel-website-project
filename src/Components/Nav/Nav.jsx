@@ -9,6 +9,7 @@ import logo2 from '../../assets/logo2.png'
 function Nav() {
 
   const [navbar,setNavbar] = useState(false)
+  const [showMenu,setShowMenu] = useState(false)
 
   const changeBackground = () => {
     if(window.scrollY >= 200) {
@@ -16,6 +17,10 @@ function Nav() {
     }else{
       setNavbar(false)
     }
+  }
+
+  const showMenuHandler = () => {
+    setShowMenu(!showMenu)
   }
 
   window.addEventListener('scroll',changeBackground)
@@ -26,19 +31,20 @@ function Nav() {
         <div className="logo">
           <img src={navbar ? logo2 : logo1} />
         </div>
-        <div className="links">
-          <NavLink to='/' className='link'>خانه</NavLink>
-          <NavLink to='/about' className='link'>درباره ما</NavLink>
-          <NavLink to='/rooms' className='link'>
+        <div className={!showMenu ? 'hidden-links links' : 'show-links links'}>
+          <span className='close-menu' onClick={showMenuHandler}>X</span>
+          <NavLink to='/' className='link' onClick={showMenuHandler}>خانه</NavLink>
+          <NavLink to='/about' className='link' onClick={showMenuHandler}>درباره ما</NavLink>
+          <NavLink to='/rooms' className='link' onClick={showMenuHandler}>
             اتاقها
             <BiDownArrow className='arrowicon'/>
           </NavLink>
-          <NavLink to='/resturant' className='link'>رستوران</NavLink>
-          <NavLink to='/gallery' className='link'>گالری</NavLink>
-          <NavLink to='/news' className='link'>اخبار</NavLink>
-          <NavLink to='/contact' className='link'>ارتباط باما</NavLink>
+          <NavLink to='/resturant' className='link' onClick={showMenuHandler}>رستوران</NavLink>
+          <NavLink to='/gallery' className='link' onClick={showMenuHandler}>گالری</NavLink>
+          <NavLink to='/news' className='link' onClick={showMenuHandler}>اخبار</NavLink>
+          <NavLink to='/contact' className='link' onClick={showMenuHandler}>ارتباط باما</NavLink>
         </div>
-        <div className="menuicon">
+        <div className="menuicon" onClick={showMenuHandler}>
           <TiThMenuOutline />
         </div>
       </div>

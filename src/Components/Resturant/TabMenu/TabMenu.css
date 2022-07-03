@@ -102,4 +102,24 @@
 .tabmenu-part .tab-body .foodslist .fooditem .food-inner {
   color: #d3d3d3;
 }
+
+@media (max-width: 768px) {
+  .tabmenu-part {
+    min-height: 140vh;
+    margin-top: 2rem;
+  }
+  .tabmenu-part .tabmenu {
+    font-size: 12px;
+  }
+  .tabmenu-part .tabmenu .tab-item {
+    margin-left: .1rem;
+  }
+  .tabmenu-part .tab-body .foodslist {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -webkit-column-gap: 20%;
+            column-gap: 20%;
+    row-gap: 5%;
+  }
+}
 /*# sourceMappingURL=TabMenu.css.map */

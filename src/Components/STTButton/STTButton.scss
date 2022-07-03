@@ -1,7 +1,7 @@
 @import '../../Styles/variables';
 @import '../../Styles/mixin';
 
-.scroll-to-top{
+.scroll-to-top {
   width: 40px;
   height: 40px;
   display: flex;
@@ -17,7 +17,7 @@
   display: none;
   z-index: 100;
 
-  .sttbtn{
+  .sttbtn {
     width: 95%;
     height: 95%;
     display: flex;
@@ -27,11 +27,12 @@
     border-radius: 50%;
   }
 
-  .stticon{
+  .stticon {
     color: $primary;
   }
 }
 
-.scroll-to-top.showbtn{
+.scroll-to-top.showbtn {
   display: flex;
 }
+

@@ -46,3 +46,11 @@
     }
   }
 }
+
+
+@include media(M){
+  .contact-main-part{
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+}

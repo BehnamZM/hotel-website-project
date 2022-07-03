@@ -101,4 +101,22 @@
   height: 30vh;
   border-radius: 5px;
 }
+
+@media (max-width: 768px) {
+  .mainroom-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .mainroom-container .main-room-aside {
+    margin: 0;
+  }
+  .mainroom-container .main-room-aside .aside-link .link-img {
+    width: 100%;
+  }
+  .mainroom-container .about-room .room-gallery {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
 /*# sourceMappingURL=MainRoom.css.map */

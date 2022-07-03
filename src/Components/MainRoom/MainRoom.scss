@@ -91,3 +91,25 @@
 
   }
 }
+
+@include media(M){
+  .mainroom-container{
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    .main-room-aside {
+      margin: 0;
+      .aside-link{
+        .link-img{
+          width: 100%;
+        }
+
+      }
+    }
+
+    .about-room{
+      .room-gallery{
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}

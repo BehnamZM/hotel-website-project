@@ -50,4 +50,12 @@
 .contact-main-part .contact-form .button {
   width: 100%;
 }
+
+@media (max-width: 768px) {
+  .contact-main-part {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 5px;
+  }
+}
 /*# sourceMappingURL=ContactForm.css.map */

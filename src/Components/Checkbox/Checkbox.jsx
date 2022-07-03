@@ -9,8 +9,22 @@ function Checkbox() {
       <div className="checkroom">
         <Roomcheck />
         <Childcheck />
-        <div className="calendar checkitem">تاریخ ورود</div>
-        <div className="calendar checkitem">تاریخ خروج</div>
+        <input
+          className="calendar checkitem"
+          type='date'
+          placeholder='تاریخ ورود'
+          value="2022-01-01"
+          min="2022-01-01"
+          max="2023-01-01"
+          />
+        <input
+          className="calendar checkitem"
+          type='date'
+          placeholder='تاریخ خروج'
+          value="2022-01-01"
+          min="2022-01-01"
+          max="2023-01-01" />
+
         <button>چک کن</button>
 
       </div>

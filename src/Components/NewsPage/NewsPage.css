@@ -15,4 +15,11 @@
 .news-part .news-container .news-card {
   margin-bottom: 4rem;
 }
+
+@media (max-width: 768px) {
+  .news-part .news-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
 /*# sourceMappingURL=NewsPage.css.map */

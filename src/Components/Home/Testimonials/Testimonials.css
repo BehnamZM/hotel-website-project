@@ -75,6 +75,7 @@
   bottom: 0;
   left: 0;
   z-index: 10;
+  top: 80%;
 }
 
 .testimonials-part .testimonials-body .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,

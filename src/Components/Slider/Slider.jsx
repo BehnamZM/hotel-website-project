@@ -14,8 +14,13 @@ import Checkbox from "../Checkbox/Checkbox";
 
 import ReservePhone from "../ReservePhone/ReservePhone";
 
-export default function Slider(props) {
+export default function Slider() {
+  const [slideInfos, setSlideInfo] = useState([
 
+    { title: 'یک تجربه بینظیر', roomInfo: 'از بهترین لحظات زندگی خود لذت ببرید', src: './src/assets/hotel2.jpg' },
+    { title: 'بهترین سوییت ها و استراحتگاه ها', roomInfo: 'ما هستیم زیرا شما لایق بهترین ها هستید', src: './src/assets/hotel5.jpg' },
+    { title: 'کافیست به ما اعتماد کنید', roomInfo: 'در بهترین مجموعه اقامتی این شهر منتظرتان هستیم ', src: './src/assets/hotel8.jpg' },
+  ])
   return (
     <>
       <Swiper
@@ -27,10 +32,12 @@ export default function Slider(props) {
         modules={[EffectFade, Pagination]}
         className="mySwiper"
       >
-        <SwiperSlide className="swiper-slide" key={props.title}>
-          <img src={props.src} />
-          <SliderInfo {...props.slideInfo} />
-        </SwiperSlide>
+        {slideInfos.map(slideInfo => (
+          <SwiperSlide className="swiper-slide" key={slideInfo.title}>
+            <img src={slideInfo.src} />
+            <SliderInfo {...slideInfo} />
+          </SwiperSlide>
+        ))}
         <ReservePhone />
         <Checkbox />
       </Swiper>

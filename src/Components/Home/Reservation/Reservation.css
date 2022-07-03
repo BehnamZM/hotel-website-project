@@ -82,7 +82,7 @@
 
 @media (max-width: 768px) {
   .reservation-part {
-    min-height: 100vh;
+    min-height: 150vh;
   }
   .reservation-part .reservation-overlay .reservation-container {
     -ms-grid-columns: 1fr;

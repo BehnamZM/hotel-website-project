@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react'
 import './STTButton.css'
 import { IoIosArrowUp } from 'react-icons/io'
-import Aos from 'aos'
-import 'aos/dist/aos.css'
+// import Aos from 'aos'
+// import 'aos/dist/aos.css'
 function STTButton() {
 
   const [buttonShow, setButtonShow] = useState(false)
 
-  useEffect(() => {
-    Aos.init({ duration: 2000 })
-  }, [setButtonShow])
+  // useEffect(() => {
+  //   Aos.init({ duration: 2000 })
+  // }, [setButtonShow])
 
 
 
@@ -41,7 +41,7 @@ function STTButton() {
     <>
       <div
         className={buttonShow ? 'scroll-to-top showbtn' : 'scroll-to-top'}
-        data-aos="fade-up"
+        // data-aos="fade-up"
         onClick={() => toTopHandler()}
       >
         <div className="sttbtn">

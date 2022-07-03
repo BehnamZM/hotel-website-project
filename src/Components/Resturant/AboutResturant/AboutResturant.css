@@ -59,4 +59,14 @@
 .about-resturant .resturant-rules .hours .working-hours .hours-icon {
   color: #aa8453;
 }
+
+@media (max-width: 768px) {
+  .about-resturant {
+    min-height: 120vh;
+  }
+  .about-resturant .about-resturant-title {
+    width: 100%;
+    text-align: justify;
+  }
+}
 /*# sourceMappingURL=AboutResturant.css.map */

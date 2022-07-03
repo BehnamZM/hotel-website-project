@@ -57,3 +57,15 @@
     .resturant-rooms-service {}
   }
 }
+
+
+@include media(M){
+  .about-resturant{
+    min-height: 120vh;
+
+    .about-resturant-title{
+      width: 100%;
+      text-align: justify;
+    }
+  }
+}
