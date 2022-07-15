@@ -4,7 +4,7 @@ import { MdOutlineBathtub,MdPool} from 'react-icons/md'
 import { GiCampCookingPot } from 'react-icons/gi'
 import { BiBed } from 'react-icons/bi'
 import {BsArrowLeft} from 'react-icons/bs'
-import './Roomcard.css'
+import './RoomCard.css'
 
 function Roomcard(props) {
   return (
