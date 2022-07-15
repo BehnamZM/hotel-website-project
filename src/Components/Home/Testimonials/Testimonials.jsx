@@ -10,11 +10,15 @@ import "swiper/css/pagination";
 // import required modules
 import { Pagination } from "swiper";
 
+import testimonial1 from '../../../assets/client1.jpg'
+import testimonial2 from '../../../assets/client2.jpg'
+import testimonial3 from '../../../assets/client3.jpg'
+
 function Testimonials() {
   const [clientCommentInfos, setClientCommentInfo] = useState([
-    {id:1, comment: 'من چند هفته قبل به همراه خانواده به مدت هفت روز در این هتل اقامت داشتیم و میتوانم بگویم لحظه به لحظه سفرما لذت بخش بود.جا دارد ازمجموعه هتل کاپا تشکر ویژه داشته باشم.', name: 'علی رضایی', img: './src/assets/client1.jpg' },
-    {id:2, comment: 'من در طول عمر خود در هتل های زیادی اقامت داشتم اما به جرئت میتوانم بگویم هتل کاپا بهترین آن بود و قطعا در آینده هم به اینجا باز خواهم گشت.', name: 'مرتضی کرمانی مقدم', img: './src/assets/client2.jpg' },
-    {id:3, comment: 'چیزی که مرا مجذوب خود کرد حرفه ای بودن کارکنان این هتل بود به طوری که در صورت نیاز در هر ساعتی از شب و روز آماده سرویس دهی بودند از همه آنها ممنونم', name: 'کاظم برجلو', img: './src/assets/client3.jpg' },
+    {id:1, comment: 'من چند هفته قبل به همراه خانواده به مدت هفت روز در این هتل اقامت داشتیم و میتوانم بگویم لحظه به لحظه سفرما لذت بخش بود.جا دارد ازمجموعه هتل کاپا تشکر ویژه داشته باشم.', name: 'علی رضایی', img: testimonial1 },
+    {id:2, comment: 'من در طول عمر خود در هتل های زیادی اقامت داشتم اما به جرئت میتوانم بگویم هتل کاپا بهترین آن بود و قطعا در آینده هم به اینجا باز خواهم گشت.', name: 'مرتضی کرمانی مقدم', img: testimonial2 },
+    {id:3, comment: 'چیزی که مرا مجذوب خود کرد حرفه ای بودن کارکنان این هتل بود به طوری که در صورت نیاز در هر ساعتی از شب و روز آماده سرویس دهی بودند از همه آنها ممنونم', name: 'کاظم برجلو', img: testimonial3 },
   ])
   return (
     <>

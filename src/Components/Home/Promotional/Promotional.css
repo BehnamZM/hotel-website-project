@@ -1,7 +1,7 @@
 .promotional-part {
   height: 70vh;
   position: relative;
-  background-image: url("./src/assets/hotel7.jpg");
+  background-image: url("../../../assets/hotel7.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;

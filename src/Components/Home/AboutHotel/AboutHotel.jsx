@@ -1,7 +1,12 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import './AboutHotel.css'
 import StarBox from '../../StarBox/StarBox';
 import ReservePhone from '../../ReservePhone/ReservePhone'
+import aboutImg1 from '../../../assets/hotel6.jpg'
+import aboutImg2 from '../../../assets/hotel7.jpg'
+
+// aos package had some bugs
+
 // import Aos from 'aos'
 // import 'aos/dist/aos.css'
 
@@ -27,10 +32,10 @@ function AboutHotel() {
         </div>
         <div className="about-img" >
           <div className='img-one'>
-            <img src="./src/assets/hotel6.jpg" alt="" />
+            <img src={aboutImg1} alt="aboutImage" />
           </div>
           <div className='img-two'>
-            <img src="./src/assets/hotel7.jpg" alt="" />
+            <img src={aboutImg2} alt="aboutImage" />
           </div>
         </div>
       </div>

@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './Promotional.css'
 import StarBox from '../../StarBox/StarBox'
 import {BsPlay} from 'react-icons/bs'
+import promotionalVideo from '../../../assets/promotional.mp4'
 
 function Promotional() {
   const [showVideo, setShowVideo] = useState(false)
@@ -21,7 +22,7 @@ function Promotional() {
         </div>
         {
           showVideo ? (<div className="video-overlay" onClick={() => setShowVideo(false)}>
-          <video src="./src/assets/promotional.mp4" controls></video>
+          <video src={promotionalVideo} controls></video>
         </div>) : null
         }
         

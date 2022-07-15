@@ -5,10 +5,12 @@ import Testmonials from '../Home/Testimonials/Testimonials'
 import AboutResturant from './AboutResturant/AboutResturant'
 import ImgHeader from '../ImgHeader/ImgHeader'
 
+import resturantImg from '../../assets/resturant7.jpg'
+
 function Resturant() {
 
   const [headerInfo,setHeaderInfo] = useState({
-    url:'url(./src/assets/resturant7.jpg)', title1:'تجربه ای خاص',title2:'رستوران کاپا'
+    url:`url(${resturantImg})`, title1:'تجربه ای خاص',title2:'رستوران کاپا'
    })
 
 

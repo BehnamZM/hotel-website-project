@@ -6,10 +6,11 @@ import Facilities from '../Home/Facilities/Facilities'
 import Testimonials from '../Home/Testimonials/Testimonials'
 import HotelTeam from './HotelTeam/HotelTeam'
 import ImgHeader from '../ImgHeader/ImgHeader'
+import headerImg from '../../assets/hotel8.jpg'
 function About() {
 
   const [headerInfo,setHeaderInfo] = useState({
-   url:'url(./src/assets/hotel8.jpg)', title1:'هتل لاکچری',title2:'درباره ما'
+   url:`url(${headerImg})`, title1:'هتل لاکچری',title2:'درباره ما'
   })
   return (
     <>

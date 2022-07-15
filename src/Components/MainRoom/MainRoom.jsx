@@ -9,7 +9,7 @@ function MainRoom() {
   let params = useParams()
   const [roomsData, setRoomsData] = useState(mainRoomsData)
   const [headerInfo, setHeaderInfo] = useState({
-    url: mainroomimg, title1: 'همین حالا رزرو کن', title2: 'اتاقهای ما'
+    url:`url(${mainroomimg})`, title1: 'همین حالا رزرو کن', title2: 'اتاقهای ما'
   })
 
   let hasRoom = roomsData.some(room => (`:` + room.title) == params.roomTitle)

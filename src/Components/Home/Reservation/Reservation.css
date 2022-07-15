@@ -1,6 +1,6 @@
 .reservation-part {
   min-height: 70vh;
-  background-image: url("./src/assets/hotel9.jpg");
+  background-image: url("../../../assets/hotel9.jpg");
   background-size: cover;
   position: relative;
   background-attachment: fixed;

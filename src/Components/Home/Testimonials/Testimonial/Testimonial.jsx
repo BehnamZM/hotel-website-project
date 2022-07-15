@@ -9,7 +9,7 @@ function Testimonial(props) {
         <div className="testimonial-body">
           <p>{props.comment}</p>
           <div className="client-profile">
-            <img src={props.img} alt="" />
+            <img src={props.img} alt="testimonialImg" />
             <div className="client-profile-details">
               <StarBox />
               <h6 className="client-name">{props.name}</h6>

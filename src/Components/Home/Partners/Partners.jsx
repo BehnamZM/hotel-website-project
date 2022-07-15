@@ -2,6 +2,11 @@ import React,{useState} from 'react'
 import './Partners.css'
 
 import { Swiper, SwiperSlide } from "swiper/react";
+import partner1 from '../../../assets/partner1.png'
+import partner2 from '../../../assets/partner2.png'
+import partner3 from '../../../assets/partner3.png'
+import partner4 from '../../../assets/partner4.png'
+import partner5 from '../../../assets/partner5.png'
 
 // Import Swiper styles
 import "swiper/css";
@@ -12,11 +17,11 @@ import { Autoplay } from "swiper";
 
 function Partners() {
   const [partners,setPartners] = useState([
-    {partnersSrc:'./src/assets/partner1.png',id:1},
-    {partnersSrc:'./src/assets/partner2.png',id:2},
-    {partnersSrc:'./src/assets/partner3.png',id:3},
-    {partnersSrc:'./src/assets/partner4.png',id:4},
-    {partnersSrc:'./src/assets/partner5.png',id:5},
+    {partnersSrc:partner1,id:1},
+    {partnersSrc:partner2,id:2},
+    {partnersSrc:partner3,id:3},
+    {partnersSrc:partner4,id:4},
+    {partnersSrc:partner5,id:5},
 
   ])
   return (

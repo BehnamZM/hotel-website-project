@@ -48,7 +48,6 @@ function Nav() {
             {/* <BiDownArrow className='arrowicon'/> */}
           </NavLink>
           <NavLink to='/resturant' className='link' onClick={showMenuHandler}>رستوران</NavLink>
-          <NavLink to='/gallery' className='link' onClick={showMenuHandler}>گالری</NavLink>
           <NavLink to='/news' className='link' onClick={showMenuHandler}>اخبار</NavLink>
           <NavLink to='/contact' className='link' onClick={showMenuHandler}>ارتباط باما</NavLink>
           <div className="socials">
