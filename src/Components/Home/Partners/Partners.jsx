@@ -34,7 +34,7 @@ function Partners() {
         >
           {
             partners.map(partner => (
-              <SwiperSlide>
+              <SwiperSlide key={partner.id}>
                 <img src={partner.partnersSrc} alt="" key={partner.id}/>
               </SwiperSlide>
             ))

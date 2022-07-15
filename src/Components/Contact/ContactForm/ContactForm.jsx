@@ -1,25 +1,17 @@
-import React, { useState } from 'react'
+import React from 'react'
 import ReservePhone from '../../ReservePhone/ReservePhone'
 import ButtonStyle from '../../ButtonStyle/ButtonStyle'
 import StarBox from '../../StarBox/StarBox'
 import axios from 'axios'
 import './ContactForm.css'
 import swal from 'sweetalert'
+import { contactSchema } from '../../validation/contactValidation'
+import { Formik, ErrorMessage, Form, Field } from 'formik'
 
 function ContactForm() {
-
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
-  const [phone, setPhone] = useState('')
-  const [subject, setSubject] = useState('')
-  const [des, setDes] = useState('')
-
-  const submitHandler = (e) => {
-    e.preventDefault()
+  const submitHandler = (values) => {
     try {
-      const res = axios.post('https://hotel-website-project-default-rtdb.firebaseio.com/messages.json', {
-        name, email, phone, subject, des
-      })
+      const res = axios.post('https://hotel-website-project-default-rtdb.firebaseio.com/messages.json', values)
       console.log(res)
       swal("تشکر از شما", "پیام با موفقیت ارسال شد!", "success");
     }
@@ -39,46 +31,78 @@ function ContactForm() {
 
         </div>
         <div className="contact-form">
-          <form onSubmit={submitHandler}>
-            <input
-              type="text"
-              className='contact-input'
-              placeholder='نام شما *'
-              onChange={(e) => setName(e.target.value)}
-              pattern='{!}'
-              required />
-            <input
-              type="email"
-              className='contact-input'
-              placeholder='ایمیل شما *'
-              onChange={(e) => setEmail(e.target.value)}
-              pattern='{!}'
-              required />
-            <input
-              type="text"
-              className='contact-input'
-              placeholder='تلفن همراه *'
-              onChange={(e) => setPhone(e.target.value)}
-              pattern='{!}'
-              required />
-            <input type="text"
-              className='contact-input'
-              placeholder='موضوع *'
-              onChange={(e) => setSubject(e.target.value)}
-              pattern='{!}'
-              required />
-            <textarea
-              name=""
-              id=""
-              cols="30"
-              rows="5"
-              className='contact-input'
-              placeholder='پیام شما *'
-              onChange={(e) => setDes(e.target.value)}
-              required>
-            </textarea>
-            <ButtonStyle><p>ارسال پیام</p></ButtonStyle>
-          </form>
+          <Formik initialValues={{
+            name: '',
+            email: '',
+            phone: '',
+            subject: '',
+            des: '',
+          }}
+            validationSchema={contactSchema}
+            onSubmit={(values) => {
+              submitHandler(values);
+            }}>
+            <Form>
+              <Field
+                name='name'
+                type="text"
+                className='contact-input'
+                placeholder='نام شما *' />
+              <ErrorMessage
+                name="name"
+                render={(msg) => (
+                  <div className="error-input">{msg}</div>
+                )} />
+              <Field
+                name='email'
+                className='contact-input'
+                placeholder='ایمیل شما *' />
+              <ErrorMessage
+                name="email"
+                render={(msg) => (
+                  <div className="error-input">{msg}</div>
+                )} />
+              <Field
+                name='phone'
+                type="number"
+                className='contact-input'
+                placeholder='تلفن همراه *' />
+              <ErrorMessage
+                name="phone"
+                render={(msg) => (
+                  <div className="error-input">{msg}</div>
+                )} />
+              <Field
+                name='subject'
+                type="text"
+                className='contact-input'
+                placeholder='موضوع *' />
+              <ErrorMessage
+                name="subject"
+                render={(msg) => (
+                  <div className="error-input">{msg}</div>
+                )} />
+              <Field
+                type="text"
+                as="textarea"
+                name="des"
+                id=""
+                cols="30"
+                rows="5"
+                className='contact-input'
+                placeholder='پیام شما *'>
+              </Field>
+              <ErrorMessage
+                name="des"
+                render={(msg) => (
+                  <div className="error-input">{msg}</div>
+                )} />
+              <ButtonStyle>
+                <p
+                  type="submit">ارسال پیام</p>
+              </ButtonStyle>
+            </Form>
+          </Formik>
         </div>
       </div>
     </>

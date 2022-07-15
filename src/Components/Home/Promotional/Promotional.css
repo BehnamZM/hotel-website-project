@@ -7,6 +7,26 @@
   background-attachment: fixed;
 }
 
+.promotional-part .video-overlay {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.promotional-part .video-overlay video {
+  width: 50vw;
+  height: 60vh;
+  margin: 10% auto;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 1001;
+}
+
 .promotional-part .promotional-overlay {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.6);
@@ -102,5 +122,15 @@
 
 .promotional-part .promotional-body .playicon-box:hover .playicon {
   color: #fff;
+}
+
+@media (max-width: 768px) {
+  .promotional-part .video-overlay video {
+    width: 90vw;
+    height: 60vh;
+    margin: 30% auto;
+    -webkit-transform: translateX(-5%);
+            transform: translateX(-5%);
+  }
 }
 /*# sourceMappingURL=Promotional.css.map */

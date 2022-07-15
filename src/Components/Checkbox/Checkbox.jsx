@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Childcheck from './Childcheck/Childcheck'
 import Roomcheck from './Roomcheck/Roomcheck'
 import './Checkbox.css'
 
 function Checkbox() {
+  const [comeDate, setComeDate] = useState('2022-01-01')
+  const [leavingDate, setLeavingDate] = useState('2022-01-01')
   return (
     <>
       <div className="checkroom">
@@ -13,17 +15,20 @@ function Checkbox() {
           className="calendar checkitem"
           type='date'
           placeholder='تاریخ ورود'
-          value="2022-01-01"
+          value={comeDate}
           min="2022-01-01"
           max="2023-01-01"
+          onChange={e => setComeDate(e.target.value)}
           />
         <input
           className="calendar checkitem"
           type='date'
           placeholder='تاریخ خروج'
-          value="2022-01-01"
+          value={leavingDate}
           min="2022-01-01"
-          max="2023-01-01" />
+          max="2023-01-01" 
+          onChange={e => setLeavingDate(e.target.value)}
+          />
 
         <button>چک کن</button>
 

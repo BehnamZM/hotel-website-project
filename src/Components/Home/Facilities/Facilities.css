@@ -30,6 +30,22 @@
   gap: 2rem;
 }
 
+.facility-card .facility-card-body .facility-icon {
+  font-size: 50px;
+  color: #aa8453;
+}
+
+.facility-card .facility-card-body h6 {
+  font-size: 18px;
+  margin: 1rem 0;
+}
+
+.facility-card .facility-card-body p {
+  font-size: 15px;
+  font-weight: 200;
+  width: 70%;
+}
+
 @media (max-width: 768px) {
   .facilities-part {
     margin-bottom: 2rem;
@@ -37,6 +53,13 @@
   .facilities-part .facilities-cards {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+  .facility-card {
+    text-align: center;
+  }
+  .facility-card .facility-card-body p {
+    margin: 0 auto;
+    text-align: justify;
   }
 }
 /*# sourceMappingURL=Facilities.css.map */

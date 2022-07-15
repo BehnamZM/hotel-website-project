@@ -10,6 +10,28 @@
   background-attachment: fixed;
 
 
+  .video-overlay {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    overflow: hidden;
+
+  }
+
+  .video-overlay video {
+    width: 50vw;
+    height: 60vh;
+    margin: 10% auto;
+    transform: translateX(-50%);
+    z-index: 1001;
+  }
+
+
+
   .promotional-overlay {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.6);
@@ -74,8 +96,22 @@
     .playicon-box:hover .playicon-overlay {
       transform: scale(0);
     }
-    .playicon-box:hover .playicon{
+
+    .playicon-box:hover .playicon {
       color: $secondary;
+    }
+  }
+}
+
+@include media(M) {
+
+  .promotional-part {
+
+    .video-overlay video {
+      width: 90vw;
+      height: 60vh;
+      margin: 30% auto;
+      transform: translateX(-5%);
     }
   }
 }

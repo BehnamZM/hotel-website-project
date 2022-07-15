@@ -26,7 +26,7 @@ function Structures() {
       <div className="container structures-container" >
         {
           structuresInfo.map(structureInfo => (
-            <div className="structures-boxes" dir={structureInfo.dir}>
+            <div className="structures-boxes" dir={structureInfo.dir} key={structureInfo.id}>
               <div className="structures-img" >
                 <img src={structureInfo.img} alt="" />
               </div>

@@ -5,9 +5,9 @@ import { BiTime } from 'react-icons/bi'
 function AboutResturant() {
 
   const [hoursInfo, setHoursInfo] = useState([
-    { time: 'صبحانه:هر روز ازساعت 07:00 الی 11:00' },
-    { time: 'نهار: هر روز از ساعت 12:00 الی 14:00' },
-    { time: 'شام: هر روز از ساعت  18:30 الی 22:00' },
+    { time: 'صبحانه:هر روز ازساعت 07:00 الی 11:00', id: 1 },
+    { time: 'نهار: هر روز از ساعت 12:00 الی 14:00', id: 2},
+    { time: 'شام: هر روز از ساعت  18:30 الی 22:00', id: 3},
   ])
   return (
     <>
@@ -24,7 +24,7 @@ function AboutResturant() {
 
             {
               hoursInfo.map(hourInfo => (
-                <div className="working-hours">
+                <div className="working-hours" key={hourInfo.id}>
                   <BiTime className='hours-icon'/>
                   <p>{hourInfo.time}</p>
                 </div>

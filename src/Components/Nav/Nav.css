@@ -52,6 +52,10 @@ nav .links .close-menu {
   display: none;
 }
 
+nav .links > .socials {
+  display: none;
+}
+
 nav .links .link {
   color: #fff;
   text-decoration: none;
@@ -122,12 +126,26 @@ nav.active .link {
     color: #000;
     overflow: hidden;
   }
+  nav .links > .socials {
+    width: 100%;
+    display: block;
+    text-align: center;
+    color: #aa8453;
+    font-size: 20px;
+  }
+  nav .links > .socials .social-icon {
+    margin: .1rem;
+  }
   nav .links .close-menu {
     display: block;
     width: 100%;
+    color: #aa8453;
+    font-size: 30px;
+    text-align: center;
   }
   nav .links .link {
-    color: #000;
+    color: #222;
+    font-weight: 900;
   }
   nav .hidden-links {
     right: -110%;

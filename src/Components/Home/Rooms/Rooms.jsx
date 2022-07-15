@@ -15,7 +15,7 @@ function Rooms() {
       <div className="rooms-cards">
         {
           roomsInfos.map(roomInfos => (
-            <Roomcard {...roomInfos}/>
+            <Roomcard {...roomInfos} key={roomInfos.id}/>
           ))
         }
       </div>

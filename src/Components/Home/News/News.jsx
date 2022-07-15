@@ -51,7 +51,7 @@ function News() {
 
             {
               newsInfos.map(newsInfo => (
-                <SwiperSlide>
+                <SwiperSlide key={newsInfo.id}>
                   <NewsCard {...newsInfo} key={newsInfo.id} />
                 </SwiperSlide>
               ))

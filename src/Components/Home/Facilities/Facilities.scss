@@ -27,11 +27,42 @@
   }
 }
 
+.facility-card {
+  .facility-card-body {
+    .facility-icon {
+      font-size: 50px;
+      color: $primary;
+    }
+
+    h6 {
+      font-size: 18px;
+      margin: 1rem 0;
+
+    }
+
+    p {
+      font-size: 15px;
+      font-weight: 200;
+      width: 70%;
+    }
+  }
+}
+
+
 @include media(M) {
   .facilities-part{
     margin-bottom: 2rem;
     .facilities-cards{
       grid-template-columns: 1fr;
+    }
+  }
+  .facility-card {
+    text-align: center;
+    .facility-card-body {
+      p {
+        margin: 0 auto;
+        text-align: justify;
+      }
     }
   }
 }

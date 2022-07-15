@@ -51,7 +51,7 @@ function HotelTeam() {
             className="mySwiper"
           >
             {teamInfos.map(teamInfo => (
-              <SwiperSlide>
+              <SwiperSlide key={teamInfo.id}>
                 <TeammateCard {...teamInfo} />
               </SwiperSlide>
             ))}

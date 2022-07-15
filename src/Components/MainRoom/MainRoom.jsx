@@ -28,7 +28,7 @@ function MainRoom() {
             <div className="container mainroom-container">
               <aside className='main-room-aside'>
                 {roomsData.map(asideInfo => (
-                  <Link to={`/room/:${asideInfo.title}`} className='aside-link'>
+                  <Link to={`/room/${asideInfo.title}`} className='aside-link' key={asideInfo.id}>
                     <div className="link-img">
                       <img src={asideInfo.src} alt='roomimg' className='aside-link-img' />
                       <p className='aside-link-title'>{asideInfo.name}</p>

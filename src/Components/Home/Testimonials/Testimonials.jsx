@@ -27,8 +27,8 @@ function Testimonials() {
 
             {
               clientCommentInfos.map(clientCommentInfo => (
-                <SwiperSlide>
-                  <Testimonial {...clientCommentInfo} key={clientCommentInfo.id}/>
+                <SwiperSlide key={clientCommentInfo.id}>
+                  <Testimonial {...clientCommentInfo}/>
                 </SwiperSlide>
               ))
             }
