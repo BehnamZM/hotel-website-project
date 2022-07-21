@@ -1,5 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './Facilities.css'
+import { useInView } from 'react-intersection-observer';
+
 import {GiAirplaneArrival} from 'react-icons/gi'
 import {AiFillCar} from 'react-icons/ai'
 import {MdOutlineBedroomParent} from 'react-icons/md'
@@ -8,6 +10,8 @@ import {AiOutlineWifi} from 'react-icons/ai'
 import {MdOutlineFreeBreakfast} from 'react-icons/md'
 
 function Facilities() {
+  const { ref: facilitiesRef, inView: visibleFacilities, entry } = useInView()
+
   return (
     <>
       <div className="facilities-part container">
@@ -15,7 +19,7 @@ function Facilities() {
           <h5>سرویسهای ما</h5>
           <h3>امکانات هتل</h3>
         </div>
-        <div className="facilities-cards">
+        <div className={visibleFacilities ? "facilities-cards show-facilities" : "facilities-cards"} ref={facilitiesRef}>
 
           <div className="facility-card">
             <div className="facility-card-body">

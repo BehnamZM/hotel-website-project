@@ -11,6 +11,9 @@
   gap: 1rem;
   align-items: center;
   min-height: 100vh;
+  opacity: 0;
+  transition: all .5s ease;
+  transform: translateY(30%);
 
   .about-us {
     display: flex;
@@ -50,6 +53,11 @@
       object-fit: cover;
     }
   }
+}
+
+.show-about {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 

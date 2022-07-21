@@ -84,13 +84,14 @@
 
 
 
-
-
 .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 1rem;
   border: 2px solid $primary;
+  background-color: $primary;
+  
 }
+
 
 
 

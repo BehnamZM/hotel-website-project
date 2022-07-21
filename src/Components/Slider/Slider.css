@@ -96,6 +96,7 @@
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 1rem;
   border: 2px solid #aa8453;
+  background-color: #aa8453;
 }
 
 :root {

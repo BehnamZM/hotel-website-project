@@ -72,7 +72,15 @@
   }
   .checkroom button {
     height: 50px;
-    margin-top: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .checkroom input {
     border: 1px solid #c7c6c6;

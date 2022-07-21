@@ -1,4 +1,7 @@
 import React from 'react'
+
+import { useInView } from 'react-intersection-observer';
+
 import './AboutHotel.css'
 import StarBox from '../../StarBox/StarBox';
 import ReservePhone from '../../ReservePhone/ReservePhone'
@@ -11,7 +14,7 @@ import aboutImg2 from '../../../assets/hotel7.jpg'
 // import 'aos/dist/aos.css'
 
 function AboutHotel() {
-
+  const { ref: showRef, inView: visibleElement, entry } = useInView()
 
   //   useEffect(()=> {
   //     Aos.init({duration:2000})
@@ -22,7 +25,7 @@ function AboutHotel() {
 
   return (
     <>
-      <div className="container about-container">
+      <div className={ visibleElement ? "container about-container show-about" : "container about-container"} ref={showRef}>
         <div className="about-us" >
           <StarBox />
           <h5>هتل بینظیر و پنج ستاره کاپا</h5>

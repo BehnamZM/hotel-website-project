@@ -13,7 +13,7 @@
     h5 {
       @include h5Style;
     }
-    
+
     h3 {
       @include h3Style;
     }
@@ -24,8 +24,17 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+    transition: all .5s ease-in;
+    opacity: 0;
+    transform: translateY(30%);
+  }
+
+  .show-facilities {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
+
 
 .facility-card {
   .facility-card-body {
@@ -50,14 +59,17 @@
 
 
 @include media(M) {
-  .facilities-part{
+  .facilities-part {
     margin-bottom: 2rem;
-    .facilities-cards{
+
+    .facilities-cards {
       grid-template-columns: 1fr;
     }
   }
+
   .facility-card {
     text-align: center;
+
     .facility-card-body {
       p {
         margin: 0 auto;
@@ -66,4 +78,5 @@
     }
   }
 }
+
 @include media(L) {}

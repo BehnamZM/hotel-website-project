@@ -12,6 +12,11 @@
       -ms-flex-align: center;
           align-items: center;
   min-height: 100vh;
+  opacity: 0;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  -webkit-transform: translateY(30%);
+          transform: translateY(30%);
 }
 
 .about-container .about-us {
@@ -61,6 +66,12 @@
   height: 40vh;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.show-about {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .img-two {

@@ -28,6 +28,17 @@
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+  opacity: 0;
+  -webkit-transform: translateY(30%);
+          transform: translateY(30%);
+}
+
+.facilities-part .show-facilities {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .facility-card .facility-card-body .facility-icon {

@@ -5,6 +5,25 @@
 
 .structures-container {
   margin: 5rem 0;
+
+
+  .left-element{
+    transform: translateX(30%);
+  }
+
+  .right-element {
+    transform: translateX(-30%);
+  }
+
+  .left-element,.right-element {
+    transition: all .5s ease-in;
+    opacity: 0;
+  }
+
+  .show-elements {
+    opacity: 1;
+    transform: translateX(0);
+  }
   .structures-boxes {
     display: grid;
     grid-template-columns: 1fr 1fr;
