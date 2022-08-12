@@ -8,20 +8,20 @@ import { useInView } from 'react-intersection-observer';
 
 function Structures() {
   const [structuresInfo, setStructuresInfo] = useState(structuresDatas)
-  const { ref: structureRef, inView: visibleStructures, entry } = useInView()
 
-
+  // const { ref: structureRef, inView: visibleStructures, entry } = useInView()
+// ref={structureRef}
 
   return (
     <>
-      <div className="container structures-container" ref={structureRef}>
+      <div className="container structures-container" >
         {
           structuresInfo.map(structureInfo => (
             <div className="structures-boxes" dir={structureInfo.dir} key={structureInfo.id}>
-              <div className={visibleStructures ? "structures-img left-element show-elements" : "structures-img left-element"}>
+              <div className= "structures-img left-element show-elements">
                 <img src={structureInfo.img} alt="structureImage" />
               </div>
-              <div className={ visibleStructures ? "structures-introduction right-element show-elements" : "structures-introduction right-element"} >
+              <div className= "structures-introduction right-element show-elements">
                 <h5>{structureInfo.title}</h5>
                 <h3>{structureInfo.name}</h3>
                 <p>{structureInfo.explain}</p>

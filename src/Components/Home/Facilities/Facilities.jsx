@@ -10,8 +10,8 @@ import {AiOutlineWifi} from 'react-icons/ai'
 import {MdOutlineFreeBreakfast} from 'react-icons/md'
 
 function Facilities() {
-  const { ref: facilitiesRef, inView: visibleFacilities, entry } = useInView()
-
+  // const { ref: facilitiesRef, inView: visibleFacilities, entry } = useInView()
+// ref={facilitiesRef}
   return (
     <>
       <div className="facilities-part container">
@@ -19,7 +19,7 @@ function Facilities() {
           <h5>سرویسهای ما</h5>
           <h3>امکانات هتل</h3>
         </div>
-        <div className={visibleFacilities ? "facilities-cards show-facilities" : "facilities-cards"} ref={facilitiesRef}>
+        <div className="facilities-cards show-facilities">
 
           <div className="facility-card">
             <div className="facility-card-body">

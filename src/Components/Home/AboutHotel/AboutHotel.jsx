@@ -14,18 +14,13 @@ import aboutImg2 from '../../../assets/hotel7.jpg'
 // import 'aos/dist/aos.css'
 
 function AboutHotel() {
-  const { ref: showRef, inView: visibleElement, entry } = useInView()
 
-  //   useEffect(()=> {
-  //     Aos.init({duration:2000})
-  //   },[])
-  // data-aos="fade-up"
-  // data-aos="fade-up"
-
+  // const { ref: showRef, inView: visibleElement, entry } = useInView()
+// ref={showRef}
 
   return (
     <>
-      <div className={ visibleElement ? "container about-container show-about" : "container about-container"} ref={showRef}>
+      <div className="container about-container show-about" >
         <div className="about-us" >
           <StarBox />
           <h5>هتل بینظیر و پنج ستاره کاپا</h5>

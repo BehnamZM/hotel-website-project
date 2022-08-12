@@ -6,6 +6,11 @@ import './Checkbox.css'
 function Checkbox() {
   const [comeDate, setComeDate] = useState('2022-01-01')
   const [leavingDate, setLeavingDate] = useState('2022-01-01')
+
+  const checkRoomHandler = (e) => {
+    e.preventDefault()
+    alert('در حال حاضر امکان چک کردن اتاق ها وجود ندارد!')
+  }
   return (
     <>
       <div className="checkroom">
@@ -30,7 +35,7 @@ function Checkbox() {
           onChange={e => setLeavingDate(e.target.value)}
           />
 
-        <button>چک کن</button>
+        <button onClick={checkRoomHandler}>چک کن</button>
 
       </div>
     </>
