@@ -5,6 +5,7 @@ import Nav from './Components/Nav/Nav'
 import routes from './routes'
 import Footer from './Components/Footer/Footer'
 import STTButton from './Components/STTButton/STTButton'
+import ScrollToTop from './Components/ScrollToTop/ScrollToTop'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
 
   return (
     <div className="App">
+      <ScrollToTop />
       <Nav />
       <STTButton />
       {router}
